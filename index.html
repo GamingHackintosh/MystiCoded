@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>MystiCoded - Расчёт вашей матрицы судьбы</title>
+    <!--- Метатег --->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- СТИЛИ --->
+    <link rel="stylesheet" href="assets/css/adaptation.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header_up">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_content-left">
+                    <ul class="header_menu-left">
+                        <li>Главная</li>
+                        <li>Калькулятор</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER-END -->
+
+    <!-- MAIN -->
+    <main>
+        <div class="main-left">
+            
+            <div class="main-left__Form">
+                <h1>MystiCoded</h1>
+                <p>Введите вашу дату рождения для расчёта матрицы судьбы.</p>
+
+                <form id="dateForm">
+                    <input type="date" id="birthdate" required>
+                    <button type="submit">Рассчитать</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="main-right">
+            <picture class="main-right__WelcomePicture">
+                <img class="main-right__Picture" src="assets/images/main-right/main-right_IMG.webp">
+            </picture>
+        </div>
+    </main>
+    <!-- MAIN-END -->
+
+
+
+    <script src="assets/js/Form.js"></script>
+</body>
+</html>
