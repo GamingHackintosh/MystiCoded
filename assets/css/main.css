@@ -1,35 +1,50 @@
 /*====== HEADER ======*/
+/* Стили для шапки */
 header {
-    padding: 10px 0; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  rgba(14,192,168,1) 100%;
+    border-radius: 30px;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    position: relative; 
+    z-index: 1000;
 }
 
 .header_content {
-    display: flex; 
-    align-items: center;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-}
-
-.header_content-left {
-    flex: 1; 
+    align-items: center;
 }
 
 .header_menu-left {
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    align-items: center; 
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
+
 .header_menu-left li {
-    margin-right: 20px;
-    padding: 10px 15px; 
+    margin-right: 20px; /* Отступ между элементами */
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон для элементов меню */
+    border-radius: 20px; /* Скругление для кнопок меню */
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+    transition: background-color 0.3s, color 0.3s;
+    color: white; /* Белый текст */
+    font-weight: bold; /* Жирный шрифт */
 }
+
 .header_menu-left li:hover {
-    background-color: #e9ecef;
+    background-color: rgba(255, 255, 255, 0.4); /* Изменение фона при наведении */
     color: #0056b3;
 }
+
+
 
 
 /*====== MAIN ======*/

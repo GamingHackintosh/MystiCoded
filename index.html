@@ -19,11 +19,10 @@
             <div class="header_content">
                 <div class="header_content-left">
                     <ul class="header_menu-left">
-                        <li>Главная</li>
-                        <li>Калькулятор</li>
-                    </ul>
+                        <li><i class="fa fa-home"></i> Главная</li>
+                        <li><i class="fa fa-calculator"></i> Калькулятор</li>
+                    </ul>                    
                 </div>
-
             </div>
         </div>
     </header>
@@ -31,20 +30,22 @@
 
     <!-- MAIN -->
     <main>
-        <div class="main-left">
-            <div class="main-left__Title">
-                <h1>Расчёт матрицы судьбы</h1>
+        <div class="container">
+            <div class="main-left">
+                <div class="main-left__Title">
+                    <h1>Расчёт матрицы судьбы</h1>
+                </div>
+                <form id="dateForm" class="date-form">
+                    <label for="birthdate">Введите дату рождения:</label>
+                    <input type="date" id="birthdate" required>
+                    <button type="submit">Рассчитать</button>
+                </form>
+            </div>        
+            <div class="main-right">
+                <picture class="main-right__WelcomePicture">
+                    <img class="main-right__Picture" src="assets/images/main-right/main-right_IMG.webp">
+                </picture>
             </div>
-            <form id="dateForm" class="date-form">
-                <label for="birthdate">Введите дату рождения:</label>
-                <input type="date" id="birthdate" required>
-                <button type="submit">Рассчитать</button>
-            </form>
-        </div>        
-        <div class="main-right">
-            <picture class="main-right__WelcomePicture">
-                <img class="main-right__Picture" src="assets/images/main-right/main-right_IMG.webp">
-            </picture>
         </div>
     </main>
     <!-- MAIN-END -->
@@ -52,5 +53,6 @@
 
 
     <script src="assets/js/Form.js"></script>
+    <script src="https://kit.fontawesome.com/ca05fd3a6e.js" crossorigin="anonymous"></script>
 </body>
 </html>
