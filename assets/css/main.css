@@ -1,22 +1,16 @@
 /*====== HEADER ======*/
 /* Стили для шапки */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:  rgba(14,192,168,1) 100%;
-    border-radius: 30px;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-    position: relative; 
-    z-index: 1000;
-}
-
 .header_content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    height: 90px;
+    background: #0056b3;
+    border-radius: 3000px;
+    margin-top: 50px;
+    padding: 0px 35px 0px 35px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    justify-items: center;
     align-items: center;
 }
 
@@ -27,20 +21,18 @@ header {
     margin: 0;
     padding: 0;
 }
-
 .header_menu-left li {
-    margin-right: 20px; /* Отступ между элементами */
+    margin-right: 20px; 
     padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон для элементов меню */
-    border-radius: 20px; /* Скругление для кнопок меню */
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px; 
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-    color: white; /* Белый текст */
-    font-weight: bold; /* Жирный шрифт */
+    color: white; 
+    font-weight: bold; 
 }
-
 .header_menu-left li:hover {
-    background-color: rgba(255, 255, 255, 0.4); /* Изменение фона при наведении */
+    background-color: rgba(255, 255, 255, 0.4); 
     color: #0056b3;
 }
 
@@ -55,15 +47,14 @@ main {
     padding: 20px;
     gap: 20px;
 }
-
 .main-left, .main-right {
     flex: 1;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
-    flex-direction: column; /* Задает вертикальное выравнивание содержимого */
-    justify-content: center; /* Центрирует содержимое по вертикали */
+    flex-direction: column; 
+    justify-content: center; 
 }
 
 .main-left {
@@ -73,13 +64,12 @@ main {
 .main-right {
     order: 2;
     display: flex;
-    align-items: center; /* Центрирует изображение по вертикали */
-    justify-content: center; /* Центрирует изображение по горизонтали */
+    align-items: center; 
+    justify-content: center; 
 }
-
 .main-right__Picture {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 30px; /* Скругленные углы для изображения */
+    border-radius: 30px;
 }
