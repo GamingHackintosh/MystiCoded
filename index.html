@@ -8,6 +8,7 @@
     <!--- СТИЛИ --->
     <link rel="stylesheet" href="assets/css/adaptation.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/Date-Form.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/root.css">
 </head>
@@ -31,18 +32,15 @@
     <!-- MAIN -->
     <main>
         <div class="main-left">
-            
-            <div class="main-left__Form">
-                <h1>MystiCoded</h1>
-                <p>Введите вашу дату рождения для расчёта матрицы судьбы.</p>
-
-                <form id="dateForm">
-                    <input type="date" id="birthdate" required>
-                    <button type="submit">Рассчитать</button>
-                </form>
-                <div id="result"></div>
+            <div class="main-left__Title">
+                <h1>Расчёт матрицы судьбы</h1>
             </div>
-        </div>
+            <form id="dateForm" class="date-form">
+                <label for="birthdate">Введите дату рождения:</label>
+                <input type="date" id="birthdate" required>
+                <button type="submit">Рассчитать</button>
+            </form>
+        </div>        
         <div class="main-right">
             <picture class="main-right__WelcomePicture">
                 <img class="main-right__Picture" src="assets/images/main-right/main-right_IMG.webp">
