@@ -27,24 +27,26 @@ p {
     line-height: 1.5;
 }
 
-form {
-    margin-top: 20px; 
-}
+
 .blocktext strong {
     display: inline-block;
     font-weight: normal;
 }
 
+/*===== КНОПКИ =====*/
 button {
-    background-color: #004b8d;
+    background-color: #0056b3;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 0.3s; 
 }
 button:hover {
     background-color: #032d52;
+}
+button:hover, .tab-button.active, .tab-button:hover {
+    background-color: #004b8d; /* Темный оттенок при наведении */
 }
