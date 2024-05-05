@@ -1,41 +1,17 @@
-.date-form {
+.form-section form {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    width: 100%; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    background-color: #f8f8f8; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 10px;
 }
 
-.date-form label {
-    font-size: 16px;
+.input-group label {
+    font-size: 14px;
     color: #333;
-    margin-bottom: 10px; 
 }
 
-.date-form input[type="date"],
-.date-form button {
-    width: 90%; 
-    padding: 12px;
-    margin-bottom: 10px; 
+.input-group input {
+    padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; 
-    margin: 10px;
-}
-
-.date-form button {
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.date-form button:hover {
-    background-color: #004494;
 }

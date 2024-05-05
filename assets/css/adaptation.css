@@ -11,4 +11,9 @@
     .header_menu-left li {
         margin: 5px;
     }
+    
+    .main-container {
+        width: 100%;
+        margin: 20px auto;
+    }
 }

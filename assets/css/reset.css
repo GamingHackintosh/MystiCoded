@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f4f4;
+    background: #e9f0f7;
     color: #333;
     text-align: center;
     padding: 20px;
@@ -9,7 +9,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1280px; /* Адаптировано под большую ширину */
+    max-width: 1280px;
     margin: 0 auto;
 }
 .main-container {
