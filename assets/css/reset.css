@@ -30,3 +30,21 @@ p {
 form {
     margin-top: 20px; 
 }
+.blocktext strong {
+    display: inline-block;
+    font-weight: normal;
+}
+
+button {
+    background-color: #004b8d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+}
+button:hover {
+    background-color: #032d52;
+}

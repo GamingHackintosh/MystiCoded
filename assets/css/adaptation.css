@@ -1,19 +1,26 @@
+/*===== АДАПТАЦИЯ =====*/
+/* Медиа-запросы для мобильных устройств */
 @media (max-width: 768px) {
     .header_content {
-        flex-direction: column; 
+        flex-direction: column;
+        padding: 10px;
     }
 
-    .header_menu-left {
-        justify-content: center; 
-        flex-wrap: wrap;
-    }
-
-    .header_menu-left li {
-        margin: 5px;
-    }
-    
     .main-container {
+        flex-direction: column;
+    }
+
+
+    .form-section form {
+        flex-direction: column;
+    }
+
+    .tabs-section {
+        flex-direction: column;
+    }
+
+    .tab-button {
         width: 100%;
-        margin: 20px auto;
+        margin: 5px 0;
     }
 }
