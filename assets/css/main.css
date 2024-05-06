@@ -56,15 +56,12 @@ main {
     margin: 0 auto;
 }
 .main-section {
-    background-color: #fff; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    padding: 30px;
-    border-radius: 30px;
-    display: flex; 
-    flex-direction: row; 
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
-    margin-top: 20px;
-    align-items: center; 
-    justify-content: center; 
-    width: 90%; 
+    padding: 20px; 
+    max-width: 600px;
+    margin: auto; 
+    width: 90%;
 }

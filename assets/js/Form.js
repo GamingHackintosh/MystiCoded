@@ -1,11 +1,11 @@
-document.getElementById('dateForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const birthdate = new Date(document.getElementById('birthdate').value);
-    calculateMatrix(birthdate);
-});
+document.getElementById('dateForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Предотвратить стандартную отправку формы
+    const name = document.getElementById('name').value;
+    const birthdate = document.getElementById('birthdate').value;
 
-function calculateMatrix(birthdate) {
-    const resultElement = document.getElementById('result');
-    const birthDateString = birthdate.toISOString().slice(0, 10);  // Пример обработки
-    resultElement.innerHTML = `Матрица для даты рождения ${birthDateString} ещё не рассчитана.`;
-}
+    // Вы можете здесь добавить AJAX запрос или какую-либо логику для обработки данных
+    console.log("Имя:", name, "Дата рождения:", birthdate);
+    alert('Форма отправлена! Проверьте консоль для деталей.');
+
+    // Тут может быть вызов функции для отправки данных на сервер или другие действия
+});
