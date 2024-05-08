@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e9f0f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+h1 {
+    margin-bottom: 16px;
+}
+p {
+    color: #666; 
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+
+
+.blocktext strong {
+    display: inline-block;
+    font-weight: normal;
+}
+
+/*===== КНОПКИ =====*/
+button {
+    background-color: #f2f2f2; /* Светло-серый фон */
+    border: none; /* Убираем стандартную рамку */
+    color: #333; /* Цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта текста */
+    border-radius: 25px; /* Радиус скругления */
+    display: flex; /* Делаем кнопку флекс-контейнером */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    justify-content: space-between; /* Распределение элементов по горизонтали */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+button:hover {
+    background-color: #e6e6e6; /* Слегка темнее фон при наведении */
+}
+
+button svg {
+    fill: #333; /* Цвет иконки */
+    margin-left: 10px; /* Отступ иконки от текста */
+}
+
+/* Добавляем иконку стрелки через SVG напрямую в CSS */
+button::after {
+    content: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23333" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/></svg>');
+    display: inline-block;
+    margin-left: 10px; /* Отступ для иконки */
+}
