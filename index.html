@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Матрица Судьбы</title>
-    <!--STYLE-->
+    <!-- STYLE -->
     <link rel="stylesheet" href="frontend/css/reset.css">
     <link rel="stylesheet" href="frontend/css/main.css">
     <link rel="stylesheet" href="frontend/css/fonts.css">
+    <!-- ПОДКЛЮЧЕННЫЕ БИБЛИОТЕКИ (Стили) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
@@ -41,18 +42,9 @@
                     </div>
                     <input type="text" placeholder="Ваше имя" required>
                     <div class="date-inputs">
-                        <select required>
-                            <option value="13">13</option>
-                            <!-- Другие дни -->
-                        </select>
-                        <select required>
-                            <option value="May">Май</option>
-                            <!-- Другие месяцы -->
-                        </select>
-                        <select required>
-                            <option value="2024">2024</option>
-                            <!-- Другие годы -->
-                        </select>
+                        <select id="day" required></select>
+                        <select id="month" required></select>
+                        <select id="year" required></select>
                     </div>
                     <button type="submit">Рассчитать</button>
                 </form>
@@ -68,5 +60,7 @@
 
     <!--- Scripts --->
     <script src="https://kit.fontawesome.com/ca05fd3a6e.js" crossorigin="anonymous"></script>
+    <script src="frontend/js/main.js"></script>
+    <script src="frontend/js/date-input.js"></script>
 </body>
 </html>

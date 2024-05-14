@@ -96,7 +96,7 @@ header .login-btn:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('your-blurred-background-image.jpg') no-repeat center center/cover;
+    background: url('../assets/img/blurred-background.jpg') no-repeat center center/cover;
     filter: blur(10px);
     z-index: -1;
     border-radius: 20px;

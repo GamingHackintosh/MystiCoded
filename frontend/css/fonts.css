@@ -1,24 +1,24 @@
 /* Подключение шрифтов */
 @font-face {
     font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Regular.woff2') format('woff2'),
-         url('fonts/Gilroy-Regular.woff') format('woff');
+    src: url('../assets/fonts/Girloy/Gilroy-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/Girloy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/Girloy/Gilroy-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/Girloy/Gilroy-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/fonts/Girloy/Gilroy-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/Girloy/Gilroy-Bold.svg#Gilroy-Bold') format('svg'); /* Legacy iOS */
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Medium.woff2') format('woff2'),
-         url('fonts/Gilroy-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url('fonts/Gilroy-Bold.woff2') format('woff2'),
-         url('fonts/Gilroy-Bold.woff') format('woff');
+    src: url('../assets/fonts/Girloy/Gilroy-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../assets/fonts/Girloy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/Girloy/Gilroy-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/Girloy/Gilroy-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/fonts/Girloy/Gilroy-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/Girloy/Gilroy-Bold.svg#Gilroy-Bold') format('svg'); /* Legacy iOS */
     font-weight: 700;
-    font-style: normal;
+    font-style: bold;
 }
