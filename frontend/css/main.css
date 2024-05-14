@@ -1,7 +1,7 @@
 /* main.css */
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Gilroy', sans-serif;
     background-color: #f0f0f0;
     color: #333;
     margin: 0;
@@ -11,37 +11,57 @@ body {
     min-height: 100vh;
 }
 
-header {
+/*===== HEADER =====*/
+header, footer {
     background-color: #36a975;
     color: white;
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-    position: relative;
-    z-index: 2;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+header .main-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+header .main-nav a {
+    background-color: #f0f0f0;
+    color: #36a975;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+header .main-nav :hover {
+    background-color: white;
+    color: #36a975;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
+header .login-btn {
+    background-color: white;
+    color: #36a975;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+header .login-btn:hover {
+    background-color: #36a975;
+    color: white;
 }
 
-.main-nav, .login-nav {
+/*===== NAV (HEADER) =====*/
+.main-nav, .Auth-nav {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-
-.main-nav a, .login-nav a {
+.main-nav a, .Auth-nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -50,21 +70,48 @@ header h1 {
     border-radius: 5px;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
-.main-nav a:hover, .login-nav a:hover {
+.main-nav a:hover {
+    color: white;
+    background-color: #36a975;
+}
+.Auth-nav a:hover {
+    color: #36a975;
     background-color: white;
-    color: #007BFF;
-    border-color: #007BFF;
 }
 
+/*===== Герой-секция =====*/
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    padding: 20px 0;
+    background-color: #e0f7fa;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.blurred-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('your-blurred-background-image.jpg') no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+/*===== MAIN =====*/
+/* Герой-секция */
 .hero-section {
     position: relative;
     text-align: center;
     padding: 60px 20px;
     background-color: #e0f7fa;
-    margin-top: -20px;
     z-index: 1;
     border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blurred-bg {
@@ -79,16 +126,26 @@ header h1 {
     border-radius: 20px;
 }
 
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
 .hero-content h2 {
     font-size: 2em;
-    color: #007BFF;
+    color: #36a975;
 }
 
 .hero-content p {
-    font-size: 1.2em;
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 60px;
     color: #333;
 }
 
+/*===== Форма калькулятора =====*/
 .calculator-form {
     margin-top: 20px;
     background: rgba(255, 255, 255, 0.9);
@@ -96,6 +153,31 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.calculator-form .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.calculator-form .form-buttons button {
+    background-color: #36a975;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.calculator-form .form-buttons button:hover {
+    background-color: #2a7a55;
 }
 
 .calculator-form input, .calculator-form select {
@@ -108,7 +190,7 @@ header h1 {
     font-size: 1em;
 }
 
-.calculator-form button {
+.calculator-form button[type="submit"] {
     padding: 10px 20px;
     background-color: #007BFF;
     color: white;
@@ -117,18 +199,15 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 1em;
+    display: block;
+    width: 100%;
 }
-.calculator-form button:hover {
+
+.calculator-form button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
 
+
 /*===== FOOTER =====*/
-footer {
-    background-color: #36a975;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-}
+
