@@ -1,29 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', () => {
     const daySelect = document.getElementById('day');
     const monthSelect = document.getElementById('month');
     const yearSelect = document.getElementById('year');
-
-    // Заполняем дни
+    
+    // Заполнить дни
     for (let i = 1; i <= 31; i++) {
-        let option = document.createElement('option');
-        option.value = option.textContent = i;
-        daySelect.appendChild(option);
+        const option = document.createElement('option');
+        option.value = option.text = i;
+        daySelect.add(option);
     }
     
-    // Заполняем месяцы
+    // Заполнить месяцы
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
     months.forEach((month, index) => {
-        let option = document.createElement('option');
-        option.value = index + 1; // value от 1 до 12
-        option.textContent = month;
-        monthSelect.appendChild(option);
+        const option = document.createElement('option');
+        option.value = index + 1;
+        option.text = month;
+        monthSelect.add(option);
     });
     
-    // Заполняем годы
+    // Заполнить годы
     const currentYear = new Date().getFullYear();
     for (let i = currentYear; i >= 1900; i--) {
-        let option = document.createElement('option');
-        option.value = option.textContent = i;
-        yearSelect.appendChild(option);
+        const option = document.createElement('option');
+        option.value = option.text = i;
+        yearSelect.add(option);
     }
 });

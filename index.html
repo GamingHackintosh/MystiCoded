@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Матрица Судьбы</title>
-    <!-- STYLE -->
     <link rel="stylesheet" href="frontend/css/reset.css">
     <link rel="stylesheet" href="frontend/css/main.css">
     <link rel="stylesheet" href="frontend/css/fonts.css">
-    <!-- ПОДКЛЮЧЕННЫЕ БИБЛИОТЕКИ (Стили) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
@@ -22,8 +20,8 @@
                 <a href="#">Детская Матрица</a>
             </nav>
             <nav class="Auth-nav">
-                <a href="login/login.html">Авторизоваться</a>
-                <a href="login/login.html">Войти</a>
+                <a href="frontend/registration.html" id="showRegisterForm">Зарегистрироваться</a>
+                <a href="frontend/login.html" id="showLoginForm">Войти</a>
             </nav>
         </div>
     </header>
@@ -33,7 +31,7 @@
             <div class="hero-content">
                 <h2>Рассчитать Матрицу Судьбы онлайн с расшифровкой</h2>
                 <p>Введите дату рождения и бесплатно рассчитайте Матрицу Судьбы с расшифровкой</p>
-                <form class="calculator-form">
+                <form class="calculator-form" id="calculatorForm">
                     <div class="form-buttons">
                         <button type="button">Матрица Судьбы</button>
                         <button type="button">Финансовые возможности</button>
@@ -58,9 +56,30 @@
         </div>
     </footer>
 
+    <!--- Forms (скрыто) --->
+    <div id="registerForm" style="display:none;">
+        <h2>Регистрация</h2>
+        <form id="registerForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+    <div id="loginForm" style="display:none;">
+        <h2>Вход</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+
     <!--- Scripts --->
     <script src="https://kit.fontawesome.com/ca05fd3a6e.js" crossorigin="anonymous"></script>
-    <script src="frontend/js/main.js"></script>
-    <script src="frontend/js/date-input.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/date-input.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

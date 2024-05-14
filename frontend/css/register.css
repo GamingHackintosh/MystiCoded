@@ -1,5 +1,5 @@
-/* login.css */
-.login-container, .verify-container, .register-container {
+/* register.css */
+.register-container {
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
@@ -9,11 +9,11 @@
     text-align: center;
 }
 
-.login-container h2, .verify-container h2, .register-container h2 {
+.register-container h2 {
     margin-bottom: 20px;
 }
 
-.login-container input, .verify-container input, .register-container input {
+.register-container input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;

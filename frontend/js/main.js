@@ -1,66 +1,45 @@
-// main.js
-document.addEventListener('DOMContentLoaded', function() {
-    const token = localStorage.getItem('token');
+document.addEventListener('DOMContentLoaded', () => {
+    const showRegisterForm = document.getElementById('showRegisterForm');
+    const showLoginForm = document.getElementById('showLoginForm');
+    const registerForm = document.getElementById('registerForm');
+    const loginForm = document.getElementById('loginForm');
 
-    document.getElementById('showRegisterForm').addEventListener('click', function() {
-        // Показать форму регистрации
-        document.getElementById('registerForm').style.display = 'block';
+    showRegisterForm.addEventListener('click', () => {
+        registerForm.style.display = 'block';
+        loginForm.style.display = 'none';
     });
 
-    document.getElementById('showLoginForm').addEventListener('click', function() {
-        // Показать форму входа
-        document.getElementById('loginForm').style.display = 'block';
+    showLoginForm.addEventListener('click', () => {
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
     });
 
-    if (token) {
-        fetch('http://localhost:3000/user/dashboard', {
-            headers: {
-                'Authorization': `Bearer ${token}`,
-            },
-        })
-        .then(res => res.json())
-        .then(data => {
-            if (res.ok) {
-                document.getElementById('userInfo').innerHTML = `
-                    <p>Username: ${data.username}</p>
-                    <p>Balance: $${data.balance}</p>
-                `;
-            } else {
-                alert('Failed to fetch user data');
-            }
-        })
-        .catch(err => console.error(err));
+    // Код для формы расчета даты
+    const daySelect = document.getElementById('day');
+    const monthSelect = document.getElementById('month');
+    const yearSelect = document.getElementById('year');
+    
+    // Заполнить дни
+    for (let i = 1; i <= 31; i++) {
+        const option = document.createElement('option');
+        option.value = option.text = i;
+        daySelect.add(option);
     }
     
-    document.getElementById('topupForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const amount = document.getElementById('amount').value;
-
-        fetch('http://localhost:3000/user/topup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`,
-            },
-            body: JSON.stringify({ amount }),
-        })
-        .then(res => res.json())
-        .then(data => {
-            if (res.ok) {
-                const stripe = Stripe('your_stripe_public_key');
-                return stripe.confirmCardPayment(data.clientSecret);
-            } else {
-                throw new Error('Top up failed');
-            }
-        })
-        .then(result => {
-            if (result.error) {
-                alert('Payment failed');
-            } else {
-                alert('Payment successful');
-                window.location.reload();
-            }
-        })
-        .catch(err => alert(err.message));
+    // Заполнить месяцы
+    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+    months.forEach((month, index) => {
+        const option = document.createElement('option');
+        option.value = index + 1;
+        option.text = month;
+        monthSelect.add(option);
     });
+    
+    // Заполнить годы
+    const currentYear = new Date().getFullYear();
+    for (let i = currentYear; i >= 1900; i--) {
+        const option = document.createElement('option');
+        option.value = option.text = i;
+        yearSelect.add(option);
+    }
 });
