@@ -1,46 +1,37 @@
-/*=== Авторизация ===*/
-function registerWithGoogle() {
-    // Логика регистрации через Google
-    console.log('Регистрация через Google');
-}
-
-function registerWithVK() {
-    // Логика регистрации через ВКонтакте
-    console.log('Регистрация через ВКонтакте');
-}
-
-function loginWithGoogle() {
-    // Логика входа через Google
-    console.log('Вход через Google');
-}
-
-function loginWithVK() {
-    // Логика входа через ВКонтакте
-    console.log('Вход через ВКонтакте');
-}
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    const userInfo = {
-        name: 'Имя Пользователя',
-        email: 'email@example.com',
-        balance: 1000
-    };
+    const nameInput = document.getElementById('name');
+    const dateInput = document.getElementById('date');
+    const calculateBtn = document.querySelector('.btn');
+    const attention = document.querySelector('.attention');
+    const attention2 = document.querySelector('.attention2');
 
-    if (document.getElementById('user-name')) {
-        document.getElementById('user-name').textContent = userInfo.name;
-        document.getElementById('user-email').textContent = userInfo.email;
-        document.getElementById('user-balance').textContent = userInfo.balance;
+    calculateBtn.addEventListener('click', () => {
+        const name = nameInput.value.trim();
+        const date = dateInput.value.trim();
+        if (name === '' || date === '') {
+            attention.style.display = 'block';
+            attention2.style.display = 'none';
+        } else if (!isValidDate(date)) {
+            attention2.style.display = 'block';
+            attention.style.display = 'none';
+        } else {
+            attention.style.display = 'none';
+            attention2.style.display = 'none';
+            // Вызов функции для отображения матрицы
+            showMatrix();
+        }
+    });
+
+    function isValidDate(date) {
+        const regex = /^\d{2}\.\d{2}\.\d{4}$/;
+        return regex.test(date);
     }
 
-    const topUpForm = document.getElementById('top-up-form');
-    if (topUpForm) {
-        topUpForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const amount = document.getElementById('amount').value;
-            console.log(`Пополнение баланса на ${amount} руб.`);
-            // Логика пополнения баланса через RoboKassa
-        });
+    function showMatrix() {
+        // Логика для отображения матрицы
+        const svg = document.getElementById('matrizca');
+        // Обновить содержимое SVG
+        // Пример:
+        // document.getElementById('center').textContent = '1';
     }
 });

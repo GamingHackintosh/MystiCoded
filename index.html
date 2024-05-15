@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Матрица Судьбы</title>
+    <title>Калькулятор Матрица Судьбы</title>
     <link rel="stylesheet" href="frontend/assets/css/reset.css">
     <link rel="stylesheet" href="frontend/assets/css/main.css">
+    <link rel="stylesheet" href="frontend/assets/css/form.css">
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на сайт "Матрица Судьбы"</h1>
-        <nav>
-            <a href="frontend/reg/register.html">Регистрация</a>
-            <a href="frontend/log/login.html">Вход</a>
-        </nav>
-    </header>
     <main>
-        <p>Здесь вы можете рассчитать свою судьбу по дате рождения.</p>
+        <div class="container">
+            <div class="info1">
+                <input id="name" type="text" placeholder="Ваше имя*">
+                <div class="form_toggle">
+                    <div class="form_toggle-item item-1">
+                        <input id="fid-1" type="radio" name="gender" value="man">
+                        <label for="fid-1">М</label>
+                    </div>
+                    <div class="form_toggle-item item-2">
+                        <input id="fid-2" type="radio" name="gender" value="woman" checked>
+                        <label for="fid-2">Ж</label>
+                    </div>
+                </div>
+            </div>
+            <div class="info2">
+                <input id="date" type="text" placeholder="Ваша дата рождения*" maxlength="10">
+            </div>
+            <div class="attention">
+                <span>Заполните все поля!</span>
+            </div>
+            <div class="attention2">
+                <span>Проверьте правильность введенных данных</span>
+            </div>
+            <button class="btn">Рассчитать</button>
+        </div>
+
+        <section class="matrixBox">
+            <svg id='matrizca' xmlns="http://www.w3.org/2000/svg" class="matrisza" width="650" height="601" viewBox="0 0 791 742" fill="none">
+                <!-- SVG content here -->
+            </svg>
+        </section>
     </main>
     <script src="frontend/assets/js/main.js"></script>
 </body>

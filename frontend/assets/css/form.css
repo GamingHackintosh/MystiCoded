@@ -1,0 +1,91 @@
+.info1, .info2 {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+#name {
+    border: 1px solid grey;
+        border-top-width: 1px;
+        border-top-color: grey;
+        border-right-width: 1px;
+        border-right-color: grey;
+        border-bottom-width: 1px;
+        border-bottom-color: grey;
+        border-left-width: 1px;
+        border-left-color: grey;
+    border-color: grey;
+    box-shadow: none;
+    width: 200px;
+    border-radius: 9px;
+    border-width: 1px;
+    background-color: #fff;
+}
+#date {
+    border: 1px solid grey;
+        border-top-width: 1px;
+        border-top-color: grey;
+        border-right-width: 1px;
+        border-right-color: grey;
+        border-bottom-width: 1px;
+        border-bottom-color: grey;
+        border-left-width: 1px;
+        border-left-color: grey;
+    width: 306px;
+    border-radius: 9px;
+    border-width: 1px;
+    background-color: #fff;
+    border-color: grey;
+}
+
+
+.form_toggle {
+	display: inline-block;
+	overflow: hidden;
+    margin-left: 15px;
+}
+.form_toggle-item {
+	float: left;
+	display: inline-block;
+}
+.form_toggle-item input[type=radio] {
+	display: none;
+    height: 35px;
+}
+.form_toggle-item label {
+    height: 25px;
+	display: inline-block;
+	padding: 0px 15px;   
+	border: 1px solid #999;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;   
+}
+ 
+.form_toggle .item-1 label {
+	border-radius: 7px 0 0 7px;
+
+}
+.form_toggle .item-2 label {
+	border-radius: 0 7px 7px 0;
+	border-right: 1px solid #999;
+
+}
+
+
+.form_toggle input[type=radio]:checked + label {
+    background: #a1dbab;
+}
+.form_toggle input[type=radio]:checked + label {
+    background: #a1dbab;
+}
+
+.item-1{
+    display: flex;
+}
+.item-1 label {
+    padding-top: 10px;
+}
+.item-2 label {
+    padding-top: 10px;
+}
