@@ -16,28 +16,59 @@
             <h1>Онлайн расчет Матрицы Судьбы с подробной расшифровкой</h1>
             <p>Получите расчет вашей Матрицы Судьбы! Узнайте совместимость, детскую, финансовую матрицу и матрицу личного бренда с полной автоматической расшифровкой и рекомендациями от психолога. Улучшите свою жизнь, работая с энергиями вашей матрицы.</p>
             <div class="tabs">
-                <button class="tab active">Матрица</button>
-                <button class="tab">Финансовая</button>
-                <button class="tab">Совместимость</button>
-                <button class="tab">Детская</button>
-                <button class="tab">Личный бренд</button>
+                <button class="tab active" data-tab="matrix">Матрица</button>
+                <button class="tab" data-tab="financial">Финансовая</button>
+                <button class="tab" data-tab="compatibility">Совместимость</button>
+                <button class="tab" data-tab="child">Детская</button>
             </div>
-            <div class="form">
-                <input id="name" type="text" placeholder="Ваше имя*">
-                <input id="date" type="text" placeholder="Дата рождения*" maxlength="10">
-                <div class="form_toggle">
-                    <div class="form_toggle-item item-1">
-                        <input id="fid-1" type="radio" name="gender" value="man">
-                        <label for="fid-1">М</label>
+            <div class="forms">
+                <div class="form form-matrix active">
+                    <div class="form_input">
+                        <input id="name" type="text" placeholder="Ваше имя*">
+                        <input id="date" type="text" placeholder="Дата рождения*" maxlength="10">
                     </div>
-                    <div class="form_toggle-item item-2">
-                        <input id="fid-2" type="radio" name="gender" value="woman" checked>
-                        <label for="fid-2">Ж</label>
+                    <div class="form_toggle">
+                        <div class="form_toggle-item item-1">
+                            <input id="fid-1" type="radio" name="gender" value="man">
+                            <label for="fid-1">М</label>
+                        </div>
+                        <div class="form_toggle-item item-2">
+                            <input id="fid-2" type="radio" name="gender" value="woman" checked>
+                            <label for="fid-2">Ж</label>
+                        </div>
                     </div>
+                    <button class="btn">Рассчитать</button>
                 </div>
-                <button class="btn">Рассчитать</button>
+                <div class="form form-financial">
+                    <!-- Здесь форма для финансовой матрицы -->
+                    <div class="form_input">
+                        <input id="name-financial" type="text" placeholder="Ваше имя*">
+                        <input id="date-financial" type="text" placeholder="Дата рождения*" maxlength="10">
+                    </div>
+                    <button class="btn">Рассчитать финансовую матрицу</button>
+                </div>
+                <div class="form form-compatibility">
+                    <!-- Здесь форма для совместимости -->
+                    <div class="form_input">
+                        <input id="name-compatibility" type="text" placeholder="Ваше имя*">
+                        <input id="partner-name" type="text" placeholder="Имя партнера*">
+                        <input id="date-compatibility" type="text" placeholder="Дата рождения*" maxlength="10">
+                        <input id="partner-date" type="text" placeholder="Дата рождения партнера*" maxlength="10">
+                    </div>
+                    <button class="btn">Рассчитать совместимость</button>
+                </div>
+                <div class="form form-child">
+                    <!-- Здесь форма для детской матрицы -->
+                    <div class="form_input">
+                        <input id="child-name" type="text" placeholder="Имя ребенка*">
+                        <input id="child-date" type="text" placeholder="Дата рождения ребенка*" maxlength="10">
+                    </div>
+                    <button class="btn">Рассчитать детскую матрицу</button>
+                </div>
             </div>
         </section>
+        
+        
         <section class="main-right">
             <img src="frontend/assets/img/main-right/background-1.webp" alt="background-1" class="photo">
         </section>
@@ -293,5 +324,6 @@
         </section>
     </main>
     <script src="frontend/assets/js/main.js"></script>
+    <script src="frontend/assets/js/form-tab.js"></script>
 </body>
 </html>

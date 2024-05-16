@@ -16,14 +16,6 @@
     max-width: 50%;
 }
 
-svg {
-    width: 100%;
-    height: auto;
-}
-
-.decryption {
-    font-family: 'Inter, sans-serif';
-}
 
 .zag {
     font-size: 24px;
@@ -61,66 +53,3 @@ svg {
 }
 
 
-.tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-.tab {
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #a3bfa0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.tab.active {
-    background-color: #a1dbab;
-    color: #fff;
-}
-
-.form input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.form_toggle {
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.form_toggle-item {
-    margin-right: 16px;
-}
-
-.form_toggle-item input {
-    display: none;
-}
-
-.form_toggle-item label {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.form_toggle-item input:checked + label {
-    background-color: #a1dbab;
-    color: #fff;
-}
-
-
-
-.btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #a1dbab;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}

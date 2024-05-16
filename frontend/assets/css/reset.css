@@ -17,6 +17,7 @@ main {
     padding: 20px;
 }
 
+/*===== HEADER =====*/
 header {
     background-color: #1976d2;
     color: white;
@@ -29,27 +30,39 @@ header nav a {
     text-decoration: none;
 }
 
+svg {
+    width: 100%;
+    height: auto;
+}
 
+.decryption {
+    font-family: 'Inter, sans-serif';
+}
+
+
+/*===== BUTTONS =====*/
 button {
-    background-color: #1976d2;
+    background-color: #89c194;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
 button:hover {
-    background-color: #155a9a;
+    background-color: #a1dbab;
 }
+
+/*=== Стиль кнопки ===*/
 .btn {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 354px;
-    height: 40px;
-    border-radius: 9px;
-    background: #a1dbab;
-    color: black;
-    font-size: 15px;
-    border-width: 1px;
-    margin-bottom: 50px;
+    padding: 12px 20px;
+    background-color: #a1dbab;
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #89c194;
 }

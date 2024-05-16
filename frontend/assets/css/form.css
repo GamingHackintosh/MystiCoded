@@ -15,11 +15,11 @@
         border-left-width: 1px;
         border-left-color: grey;
     border-color: grey;
-    box-shadow: none;
-    width: 200px;
     border-radius: 9px;
     border-width: 1px;
+    width: 200px;
     background-color: #fff;
+    margin-bottom: 10px;
 }
 #date {
     border: 1px solid grey;
@@ -39,46 +39,82 @@
 }
 
 /*===== FORM =====*/
+.tabs {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 30px;
+}
+.tab {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #a3bfa0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tab.active {
+    background-color: #a1dbab;
+    color: #fff;
+}
+.tabs button {
+    margin-left: 2px;
+}
+
+.forms .form {
+    display: none;
+}
+
+.forms .form.active {
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form_input input[type="text"] {
+    width: 80%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form_input input[type="text"]:focus {
+    border-color: #a1dbab;
+    outline: none;
+}
+
 .form_toggle {
-	display: inline-block;
-	overflow: hidden;
-    margin-left: 15px;
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
 }
+
 .form_toggle-item {
-	float: left;
+    position: relative;
 }
-.form_toggle-item input[type=radio] {
-	display: none;
-    height: 35px;
+
+.form_toggle-item input {
+    display: none;
 }
+
 .form_toggle-item label {
-    height: 25px;
-	display: inline-block;
-	padding: 0px 15px;   
-	border: 1px solid #999;
-	border-right: none;
-	cursor: pointer;
-	user-select: none;   
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.form_toggle .item-1 label {
-	border-radius: 7px 0 0 7px;
-
+.form_toggle-item input:checked + label {
+    background-color: #a1dbab;
+    color: #fff;
 }
-.form_toggle .item-2 label {
-	border-radius: 0 7px 7px 0;
-	border-right: 1px solid #999;
-
-}
-
-
-.form_toggle input[type=radio]:checked + label {
-    background: #a1dbab;
-}
-.form_toggle input[type=radio]:checked + label {
-    background: #a1dbab;
-}
-
 .item-1{
     display: flex;
 }
@@ -88,4 +124,3 @@
 .item-2 label {
     padding-top: 10px;
 }
-
