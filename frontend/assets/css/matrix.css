@@ -59,19 +59,21 @@ svg {
     vertical-align: middle;
     margin-left: 5px;
 }
+
+
 .tabs {
     display: flex;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 30px;
 }
-
 .tab {
-    background-color: #eee;
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    margin-right: 4px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #a3bfa0;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
 .tab.active {
     background-color: #a1dbab;
     color: #fff;
