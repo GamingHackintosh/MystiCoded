@@ -38,7 +38,7 @@
     border-color: grey;
 }
 
-
+/*===== FORM =====*/
 .form_toggle {
 	display: inline-block;
 	overflow: hidden;
@@ -46,7 +46,6 @@
 }
 .form_toggle-item {
 	float: left;
-	display: inline-block;
 }
 .form_toggle-item input[type=radio] {
 	display: none;
@@ -61,7 +60,7 @@
 	cursor: pointer;
 	user-select: none;   
 }
- 
+
 .form_toggle .item-1 label {
 	border-radius: 7px 0 0 7px;
 
@@ -89,3 +88,4 @@
 .item-2 label {
     padding-top: 10px;
 }
+

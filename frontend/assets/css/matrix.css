@@ -1,0 +1,124 @@
+/*===== MATRIX =====*/
+.matrixBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+}
+.matrixBox-Left, .matrixBox-Right {
+    flex: 1;
+    padding: 20px;
+}
+.matrixBox-Left {
+    max-width: 50%;
+}
+.matrixBox-Right {
+    max-width: 50%;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+.decryption {
+    font-family: 'Inter, sans-serif';
+}
+
+.zag {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.dannie {
+    margin-bottom: 20px;
+}
+
+.name, .date_birth, .age, .mapOfHealth {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dannieTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dannieTable th, .dannieTable td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.strokeTable {
+    background-color: #f8f8f8;
+}
+
+.znak svg {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.tabs {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.tab {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #a1dbab;
+    color: #fff;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form_toggle {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.form_toggle-item {
+    margin-right: 16px;
+}
+
+.form_toggle-item input {
+    display: none;
+}
+
+.form_toggle-item label {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form_toggle-item input:checked + label {
+    background-color: #a1dbab;
+    color: #fff;
+}
+
+
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #a1dbab;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -7,39 +7,289 @@
     <link rel="stylesheet" href="frontend/assets/css/reset.css">
     <link rel="stylesheet" href="frontend/assets/css/main.css">
     <link rel="stylesheet" href="frontend/assets/css/form.css">
+    <link rel="stylesheet" href="frontend/assets/css/matrix.css">
 </head>
 <body>
     <main>
         <div class="container">
-            <div class="info1">
-                <input id="name" type="text" placeholder="Ваше имя*">
-                <div class="form_toggle">
-                    <div class="form_toggle-item item-1">
-                        <input id="fid-1" type="radio" name="gender" value="man">
-                        <label for="fid-1">М</label>
-                    </div>
-                    <div class="form_toggle-item item-2">
-                        <input id="fid-2" type="radio" name="gender" value="woman" checked>
-                        <label for="fid-2">Ж</label>
-                    </div>
+            <section class="main-left">
+                <h1>Расчет Матрицы судьбы онлайн с полной расшифровкой</h1>
+                <p>Рассчитайте бесплатно Матрицу судьбы, совместимость, детскую, финансовую матрицу и матрицу личного бренда с полностью автоматической расшифровкой и рекомендациями психолога по проработке энергий в вашей матрице.</p>
+                <div class="tabs">
+                    <button class="tab active">Матрица</button>
+                    <button class="tab">Финансовая</button>
+                    <button class="tab">Совместимость</button>
+                    <button class="tab">Детская</button>
+                    <button class="tab">Личный бренд</button>
                 </div>
-            </div>
-            <div class="info2">
-                <input id="date" type="text" placeholder="Ваша дата рождения*" maxlength="10">
-            </div>
-            <div class="attention">
-                <span>Заполните все поля!</span>
-            </div>
-            <div class="attention2">
-                <span>Проверьте правильность введенных данных</span>
-            </div>
-            <button class="btn">Рассчитать</button>
+                <div class="form">
+                    <input id="name" type="text" placeholder="Ваше имя*">
+                    <input id="date" type="text" placeholder="Дата рождения*" maxlength="10">
+                    <div class="form_toggle">
+                        <div class="form_toggle-item item-1">
+                            <input id="fid-1" type="radio" name="gender" value="man">
+                            <label for="fid-1">М</label>
+                        </div>
+                        <div class="form_toggle-item item-2">
+                            <input id="fid-2" type="radio" name="gender" value="woman" checked>
+                            <label for="fid-2">Ж</label>
+                        </div>
+                    </div>
+                    <button class="btn">Рассчитать</button>
+                </div>
+            </section>
+            <section class="main-right">
+                <img src="frontend/assets/img/main-right/background-1.webp" alt="background-1" class="photo">
+            </section>
         </div>
 
         <section class="matrixBox">
-            <svg id='matrizca' xmlns="http://www.w3.org/2000/svg" class="matrisza" width="650" height="601" viewBox="0 0 791 742" fill="none">
-                <!-- SVG content here -->
-            </svg>
+            <div class="matrixBox-Left">
+                <svg id='matrizca' xmlns="http://www.w3.org/2000/svg" class="matrisza" width="650" height="601" viewBox="0 0 791 742" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet">
+                    <rect id="svgEditorBackground" x="0" y="0" width="791" height="742" style="fill: none; stroke: none;" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M328.84 299.846L259.558 230.564L257.894 232.229L327.175 301.511L328.84 299.846ZM352.498 323.504L350.833 325.169L538.423 512.759L540.088 511.094L352.498 323.504Z" style="fill:rgb(89, 112, 234)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M476.013 294.639L540.088 230.565L538.423 228.9L474.349 292.974L476.013 294.639ZM449.376 321.277L447.711 319.612L257.894 509.429L259.558 511.094L449.376 321.277Z" fill="#EA596E" />
+                    <line x1="399" y1="171.876" x2="399" y2="569.782" stroke="#0A1935" stroke-width="1.17724" />
+                    <line x1="596.182" y1="372.839" x2="398.069" y2="568.612" stroke="#C1C1C1" stroke-width="1.17724" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.48 16.48" />
+                    <line x1="399.946" y1="173.832" x2="201.832" y2="369.606" stroke="#C1C1C1" stroke-width="1.17724" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16.48 16.48" />
+                    <line x1="597.364" y1="370.829" x2="199.459" y2="370.829" stroke="#0A1935" stroke-width="1.17724" />
+                    <rect x="200.636" y="173.054" width="395.551" height="395.551" stroke="#0A1935" stroke-width="2.35447" style="fill:none" />
+                    <rect x="398.411" y="91.1324" width="395.551" height="395.551" transform="rotate(45 398.411 91.1324)" stroke="#0A1935" stroke-width="2.35447" />
+                    <circle cx="398.411" cy="370.829" r="325.958" stroke="#0A1935" stroke-width="1.88358" />
+                    <circle cx="398.411" cy="77.6975" r="31.7854" fill="#9659E3" />
+                    <circle cx="191.135" cy="163.554" r="30.8436" fill="#FAF8F6" stroke="#0A1935" stroke-width="1.88358" />
+                    <circle cx="605.687" cy="163.554" r="30.8436" fill="#FAF8F6" stroke="#0A1935" stroke-width="1.88358" />
+                    <circle cx="398.411" cy="370.829" r="31.7854" fill="#EFDB28" />
+                    <circle cx="398.411" cy="133.028" r="23.5447" fill="#2F72F3" />
+                    <circle cx="398.411" cy="173.054" r="16.4813" fill="#27AEFB" />
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.411" y="175.054" dominant-baseline="middle" text-anchor="middle" id="upThree" />
+                    </text>
+                    <circle cx="596.187" cy="370.829" r="16.4813" stroke-width="1.88358" style="stroke:none;fill:#F7A648" />
+                    <circle cx="398.411" cy="263.701" r="16.4813" fill="#7DDC32" />
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.411" y="265.701" dominant-baseline="middle" text-anchor="middle" id="upGreen"></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="596.024" y="372.267" dominant-baseline="middle" text-anchor="middle" />
+                    </text>
+                    <circle cx="291.283" cy="370.829" r="16.4813" fill="#7DDC32" />
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="291.283" y="371.829" dominant-baseline="middle" text-anchor="middle" id='leftGreen'></tspan>
+                    </text>
+                    <path d="M509.093,471C509.093,477.679,503.679,483.093,497,483.093C490.321,483.093,484.907,477.679,484.907,471C484.907,464.321,490.321,458.907,497,458.907C503.679,458.907,509.093,464.321,509.093,471Z" fill="#FAF8F6" stroke="#0A1935" stroke-width="1.81381" />
+                    <circle cx="398.411" cy="568.605" r="16.4813" stroke-width="1.88358" style="fill:#F7A648;stroke:none" />
+                    <circle cx="200.636" cy="370.829" r="16.4813" fill="#27AEFB" />
+                    <circle cx="636.213" cy="370.829" r="22.6029" stroke-width="1.88358" style="fill:white;stroke:black" />
+                    <circle cx="398.984000" cy="609.204000" r="22.602900" stroke-width="1.88358" style="stroke:black;fill:white" />
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="23.5447" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.411" y="610.631" dominant-baseline="middle" text-anchor="middle" style="fill:black;" id='downWhite'></tspan>
+                    </text>
+                    <circle cx="160.61" cy="370.829" r="23.5447" fill="#2F72F3" />
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="23.5447" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="160.408" y="372.334" dominant-baseline="middle" text-anchor="middle" id='leftTwo'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="200.144" y="372.267" dominant-baseline="middle" text-anchor="middle" id='leftThree'></tspan>
+                    </text>
+                    <circle cx="398.411" cy="663.961" r="31.7854" fill="#F24040" />
+                    <circle cx="605.687" cy="578.105" r="30.8436" fill="#FAF8F6" stroke="#0A1935" stroke-width="1.88358" />
+                    <circle cx="191.135" cy="578.105" r="30.8436" fill="#FAF8F6" stroke="#0A1935" stroke-width="1.88358" />
+                    <circle cx="691.543" cy="370.829" r="31.7854" fill="#F24040" />
+                    <circle cx="105.28" cy="370.829" r="31.7854" fill="#9659E3" />
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.366" y="80.4343" dominant-baseline="middle" text-anchor="middle" id='twentyAgePurple'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="23.5447" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.411" y="135.028" dominant-baseline="middle" text-anchor="middle" id='upTwo'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="23.5447" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="636.408" y="373.334" dominant-baseline="middle" text-anchor="middle" style="fill:black;" id='rightWhite'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="595" y="371.615" dominant-baseline="middle" text-anchor="middle" style="fill:white" id="e1_tspan"></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.411" y="665.961" dominant-baseline="middle" text-anchor="middle" id='sixtyAgeRed'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="691.626" y="374.434" dominant-baseline="middle" text-anchor="middle" id='fortyAgeRed'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="104.6638" y="373.434" dominant-baseline="middle" text-anchor="middle" id='zeroAgePurple'></tspan>
+                    </text>
+                    <text fill="#FAF8F6" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="398.158" y="373.434" dominant-baseline="middle" text-anchor="middle" id='center'></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="190.912" y="166.434" dominant-baseline="middle" text-anchor="middle" id='upLeft'></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="190.255" y="580.434" dominant-baseline="middle" text-anchor="middle" id='downLeft'></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="605.687" y="581.105" dominant-baseline="middle" text-anchor="middle" id='downRight'></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="30.6081" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="604.416" y="165.434" dominant-baseline="middle" text-anchor="middle" id='upRigth'></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="17.1793" font-weight="500" letter-spacing="-0.362763px">
+                        <tspan x="496.777" y="472.817" dominant-baseline="middle" text-anchor="middle" id='betweenHeartMoney'></tspan>
+                    </text>
+                    <text xml:space="preserve" style="white-space:pre;fill:white" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="397.888" y="570.267" dominant-baseline="middle" text-anchor="middle" id='downOrange'></tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="385.567" y="16.2673">20</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="14.1268" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="385.56" y="31.0361">лет</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="137.065" y="115.155">10</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="14.1268" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="135.986" y="129.924">лет</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="135.437" y="626.267">30</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="14.1268" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="135.513" y="641.036">лет</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="650.01" y="116.267">50</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="14.1268" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="650.026" y="131.036">лет</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="18.8358" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="654.263" y="629.267">40</tspan>
+                    </text>
+                    <text fill="#0A1935" xml:space="preserve" style="white-space: pre" font-family="Inter, sans-serif" font-size="14.1268" font-weight="500" letter-spacing="-0.376715px">
+                        <tspan x="654.026" y="644.036">лет</tspan>
+                    </text>
+                </svg>
+            </div>
+            <div class="matrixBox-Right">
+                <div class="decryption">
+                    <span class="zag">Ваша матрица судьбы</span>
+                    <div class="dannie">
+                        <span class="name">ммв</span>
+                        <span class="date_birth">Дата рождения: <span class="date_birthJS"></span> </span>
+                        <span class="age">Возраст: <span class="ageJS">NaN</span></span>
+                    </div>
+                    <div>
+                        <span class="mapOfHealth">Карта здоровья</span>
+                    </div>
+                    <div>
+                        <table class="dannieTable">
+                            <thead>
+                                <tr>
+                                    <th class="firstTH"></th>
+                                    <th class="nameOfChakra" align="left" width="200px">Название чакры</th>
+                                    <th class="nameOfChakra" align="left" width="70px">Физика</th>
+                                    <th class="nameOfChakra" align="left" width="70px">Энергия</th>
+                                    <th class="nameOfChakra" align="left" width="70px">Эмоция</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="strokeTable">
+                                    <td class="firstTH seven elemTable">7</td>
+                                    <td class="elemTable seven nameOfChakra">Сахасрара
+                                        <span class="znak">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#9659E3"></path>
+                                                <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#9659E3"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="tip" style="display: none;">Отвечает за состояние головного мозга, верхнюю часть черепа, состояние волос</span>
+                                    <td align="center" id="sevenPhisic">NaN</td>
+                                    <td align="center" id="sevenEnergy">0</td>
+                                    <td align="center" id="sevenEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable six">6</td>
+                                    <td class="elemTable six nameOfChakra">Аджна <span class="пожалуйста, подставьте сюда необходимый SVG-код от вашей таблицы. Например:
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#2F71F3"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#2F71F3"></path>
+                                        </svg></span><span class="tip">Отвечает за состояние глаз, ушей, носа, верхнюю часть лица, височных долей, затылка, зубов верхней челюсти, верхнюю челюсть, зрительные нервы</span></td>
+                                    <td align="center" id="sixPhisic">NaN</td>
+                                    <td align="center" id="sixEnergy">NaN</td>
+                                    <td align="center" id="sixEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable five">5</td>
+                                    <td class="elemTable five nameOfChakra">Вишудха <span class="znak">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.209я 4 11.7094 13.8125 8.5 13.8125Z" fill="#27AEFB"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#27AEFB"></path>
+                                        </svg></span><span class="tip">Отвечает за состояние горла, голосовые связки, нижнюю часть лица, трахеи, бронхи, щитовидку, плечи, нижнюю челюсть, шейные позвонки, зубы нижней челюсти</span></td>
+                                    <td align="center" id="fivePhisic">NaN</td>
+                                    <td align="center" id="fiveEnergy">NaN</td>
+                                    <td align="center" id="fiveEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable four">4</td>
+                                    <td class="elemTable four nameOfChakra">Анахата <span class="znak">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#7DDC32"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#7DDC32"></path>
+                                        </svg></span><span class="tip">Отвечает за состояние грудного отдела позвоночника, легких, сердца, кровеносной системы, органы дыхания, лопатки, грудь, ребра</span></td>
+                                    <td align="center" id="fourPhisic">NaN</td>
+                                    <td align="center" id="fourEnergy">NaN</td>
+                                    <td align="center" id="fourEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable three">3</td>
+                                    <td class="elemTable three nameOfChakra">Манипура <span class="znak">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#EFDB28"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#EFDB28"></path>
+                                        </svg></span><span class="tip">Отвечает за состояние поджелудочной железы, селезенки, ЖКТ, брюшной полости, печень, желчный пузырь, тонкий кишечник, центральный отдел позвоночника</span></td>
+                                    <td align="center" id="threePhisic">NaN</td>
+                                    <td align="center" id="threeEnergy">NaN</td>
+                                    <td align="center" id="threeEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable two">2</td>
+                                    <td class="elemTable two nameOfChakra">Свадхистана <span class="znak">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#F6A648"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.9328610.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#F6A648"></path>
+                                        </svg></span><span class="tip">Отвечает за состояние матки, яичников, почек, надпочечников, кишечника, предстательной железы, поясничный отдел</span></td>
+                                    <td align="center" id="twoPhisic">NaN</td>
+                                    <td align="center" id="twoEnergy">NaN</td>
+                                    <td align="center" id="twoEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable one">1</td>
+                                    <td class="elemTable one nameOfChakra">Муладхара <span class="znak">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#F24040"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#F24040"></path>
+                                        </svg></span><span class="tip">Отвечает за состояние мочеполовой системы, толстого кишечника, нижние конечности, копчик, крестец, кости</span></td>
+                                    <td align="center" id="onePhisic">0</td>
+                                    <td align="center" id="oneEnergy">NaN</td>
+                                    <td align="center" id="oneEmo">NaN</td>
+                                </tr>
+                                <tr class="strokeTable">
+                                    <td class="firstTH elemTable itogo"> </td>
+                                    <td class="pervoe poslednee">Итого <span class="znak">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" class="npr" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 1C4.63438 1 1.5 4.13438 1.5 8C1.5 11.8656 4.63438 15 8.5 15C12.3656 15 15.5 11.8656 15.5 8C15.5 4.13438 12.3656 1 8.5 1ZM8.5 13.8125C5.29063 13.8125 2.6875 11.2094 2.6875 8C2.6875 4.79063 5.29063 2.1875 8.5 2.1875C11.7094 2.1875 14.3125 4.79063 14.3125 8C14.3125 11.2094 11.7094 13.8125 8.5 13.8125Z" fill="#000"></path>
+                                            <path d="M8.15575 9.64648C8.11309 9.64648 8.07576 9.63005 8.04376 9.59718C8.01177 9.55775 7.99577 9.50845 7.99577 9.4493C7.99577 9.39671 7.99577 9.34413 7.99577 9.29155C7.99577 9.23897 7.99577 9.18639 7.99577 9.1338C8.0171 8.87747 8.07309 8.6507 8.16374 8.45352C8.25973 8.24977 8.36905 8.06573 8.49169 7.90141C8.61967 7.73052 8.74499 7.56948 8.86764 7.41831C8.99562 7.26714 9.10227 7.11925 9.18759 6.97465C9.27824 6.82347 9.33156 6.66901 9.34756 6.51127C9.36356 6.32066 9.33156 6.15962 9.25158 6.02817C9.17692 5.89671 9.07294 5.79812 8.93962 5.73239C8.81164 5.66009 8.67567 5.62394 8.53169 5.62394C8.28106 5.62394 8.07576 5.69953 7.91578 5.8507C7.75581 6.00188 7.64649 6.24507 7.58783 6.58028C7.57184 6.65915 7.54517 6.71831 7.50785 6.75775C7.47052 6.79061 7.41986 6.80704 7.35587 6.80704H6.67597C6.62798 6.80704 6.58532 6.78732 6.54799 6.74789C6.516 6.70188 6.5 6.64272 6.5 6.57042C6.50533 6.30751 6.55333 6.05446 6.64398 5.81127C6.73996 5.5615 6.87594 5.33803 7.05192 5.14085C7.23322 4.94366 7.45185 4.7892 7.70781 4.67746C7.96377 4.55915 8.25706 4.5 8.58768 4.5C8.95029 4.5 9.25424 4.55915 9.49954 4.67746C9.75017 4.7892 9.94747 4.93709 10.0914 5.12113C10.2408 5.30516 10.3474 5.50563 10.4114 5.72254C10.4754 5.93286 10.5047 6.13991 10.4994 6.34366C10.4887 6.59343 10.4434 6.8169 10.3634 7.01408C10.2834 7.21127 10.1848 7.39531 10.0675 7.5662C9.95014 7.73052 9.83015 7.89484 9.70751 8.05915C9.58486 8.2169 9.47554 8.37793 9.37956 8.54225C9.2889 8.70657 9.22758 8.88075 9.19559 9.06479C9.18492 9.12394 9.17692 9.1831 9.17159 9.24225C9.16626 9.29484 9.16092 9.34742 9.15559 9.4C9.13426 9.47887 9.1076 9.54131 9.0756 9.58732C9.04361 9.62676 8.99828 9.64648 8.93962 9.64648H8.15575ZM8.13175 11.5C8.07842 11.5 8.0331 11.477 7.99577 11.431C7.95844 11.385 7.93978 11.3291 7.93978 11.2634V10.4056C7.93978 10.3333 7.95844 10.2742 7.99577 10.2282C8.0331 10.1822 8.07842 10.1592 8.13175 10.1592H8.90763C8.96629 10.1592 9.01428 10.1822 9.05161 10.2282C9.08894 10.2742 9.1076 10.3333 9.1076 10.4056V11.2634C9.1076 11.3291 9.08894 11.385 9.05161 11.431C9.01428 11.477 8.96629 11.5 8.90763 11.5H8.13175Z" fill="#000"></path>
+                                        </svg></span><span class="tip">ОтОтвечает за кровеносную систему, лимфатическую систему, эндокринную систему, иммунитет в целом, кожу, волосы, общее состояние организма</span></td>
+                                    <td align="center" id="zeroPhisic">NaN</td>
+                                    <td align="center" id="zeroEnergy">NaN</td>
+                                    <td align="center" id="zeroEmo">NaN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <script src="frontend/assets/js/main.js"></script>

@@ -1,3 +1,30 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*===== MAIN =====*/
+.main-left, .main-right {
+    width: 48%;
+}
+.main-left {
+    max-width: 50%;
+}
+.main-right {
+    max-width: 45%;
+}
+.main-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .info1, .info2 {
     margin-bottom: 15px;
 }
@@ -8,15 +35,6 @@ input[type="text"] {
     width: 200px;
 }
 
-.btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.matrixBox {
-    margin-top: 20px;
-}
 
 .attention, .attention2 {
     color: red;

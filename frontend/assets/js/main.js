@@ -1,37 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const nameInput = document.getElementById('name');
-    const dateInput = document.getElementById('date');
-    const calculateBtn = document.querySelector('.btn');
-    const attention = document.querySelector('.attention');
-    const attention2 = document.querySelector('.attention2');
+const nameInput = document.getElementById('name');
+const dateInput = document.getElementById('date');
+const genderInputs = document.querySelectorAll('input[name="gender"]');
+const calculateButton = document.querySelector('.btn');
+const attention = document.querySelector('.attention');
+const attention2 = document.querySelector('.attention2');
 
-    calculateBtn.addEventListener('click', () => {
-        const name = nameInput.value.trim();
-        const date = dateInput.value.trim();
-        if (name === '' || date === '') {
-            attention.style.display = 'block';
-            attention2.style.display = 'none';
-        } else if (!isValidDate(date)) {
-            attention2.style.display = 'block';
-            attention.style.display = 'none';
-        } else {
-            attention.style.display = 'none';
-            attention2.style.display = 'none';
-            // Вызов функции для отображения матрицы
-            showMatrix();
-        }
-    });
+// Function to check if all inputs are filled
+function validateInputs() {
+    return nameInput.value.trim() !== '' && dateInput.value.trim() !== '' && [...genderInputs].some(input => input.checked);
+}
 
-    function isValidDate(date) {
-        const regex = /^\d{2}\.\d{2}\.\d{4}$/;
-        return regex.test(date);
+// Function to validate date format
+function validateDateFormat(date) {
+    const dateRegex = /^\d{2}\.\d{2}\.\d{4}$/;
+    return dateRegex.test(date);
+}
+
+// Function to generate matrix
+function generateMatrix(name, date, gender) {
+    // Здесь должен быть ваш код для генерации матрицы
+    // Вставьте соответствующие значения в SVG-элементы
+}
+
+// Event listener for calculate button
+calculateButton.addEventListener('click', () => {
+    if (!validateInputs()) {
+        attention.style.display = 'block';
+        return;
+    } else {
+        attention.style.display = 'none';
     }
 
-    function showMatrix() {
-        // Логика для отображения матрицы
-        const svg = document.getElementById('matrizca');
-        // Обновить содержимое SVG
-        // Пример:
-        // document.getElementById('center').textContent = '1';
+    if (!validateDateFormat(dateInput.value)) {
+        attention2.style.display = 'block';
+        return;
+    } else {
+        attention2.style.display = 'none';
     }
+
+    const name = nameInput.value;
+    const date = dateInput.value;
+    const gender = [...genderInputs].find(input => input.checked).value;
+
+    generateMatrix(name, date, gender);
 });

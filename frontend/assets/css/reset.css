@@ -1,13 +1,10 @@
+/*===== Сброс стилей =====*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 0 auto;
-    width: 400px;
 }
 
 main {
@@ -37,7 +34,7 @@ button {
 button:hover {
     background-color: #155a9a;
 }
-.btn{
+.btn {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
