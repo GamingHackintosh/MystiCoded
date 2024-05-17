@@ -33,7 +33,7 @@
 }
 
 .Data-Table thead tr {
-    background-color: #7DDC32;
+    background-color: #a1dbab;
     color: #fff;
     text-align: left;
     font-weight: bold;
@@ -52,7 +52,7 @@
     background-color: #f3f3f3;
 }
 .Data-Table tbody tr:last-of-type {
-    border-bottom: 2px solid #7DDC32;
+    border-bottom: 2px solid #a1dbab;
 }
 .Data-Table tbody tr:hover {
     background-color: #f1f1f1;
@@ -60,11 +60,11 @@
 
 .Data-Table th:first-child,
 .Data-Table td:first-child {
-    border-left: 2px solid #7DDC32;
+    border-left: 2px solid #a1dbab;
 }
 .Data-Table th:last-child,
 .Data-Table td:last-child {
-    border-right: 2px solid #7DDC32;
+    border-right: 2px solid #a1dbab;
 }
 
 .tip {
