@@ -4,24 +4,10 @@
     align-items: center;
     justify-content: center;
 }
-#name {
-    border: 1px solid grey;
-        border-top-width: 1px;
-        border-top-color: grey;
-        border-right-width: 1px;
-        border-right-color: grey;
-        border-bottom-width: 1px;
-        border-bottom-color: grey;
-        border-left-width: 1px;
-        border-left-color: grey;
-    border-color: grey;
-    border-radius: 9px;
-    border-width: 1px;
-    width: 200px;
-    background-color: #fff;
-    margin-bottom: 10px;
-}
-#date {
+#name, #date,
+#name-financial, #date-financial,
+#name-compatibility, #partner-name, #date-compatibility, #partner-date,
+#child-name, #child-date {
     border: 1px solid grey;
         border-top-width: 1px;
         border-top-color: grey;
@@ -32,11 +18,14 @@
         border-left-width: 1px;
         border-left-color: grey;
     width: 306px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 9px;
     border-width: 1px;
-    background-color: #fff;
+    background-color: #E2EBE9;
     border-color: grey;
 }
+
 
 /*===== FORM =====*/
 .tabs {
@@ -74,7 +63,10 @@
     gap: 16px;
 }
 
-.form_input input[type="text"] {
+.form_input input[type="date"],
+.form_input input[type="name"],
+
+.form_input input {
     width: 80%;
     padding: 12px 15px;
     border: 1px solid #ccc;
@@ -83,7 +75,7 @@
     transition: border-color 0.3s ease;
 }
 
-.form_input input[type="text"]:focus {
+.form_input input[type="date"]:focus {
     border-color: #a1dbab;
     outline: none;
 }

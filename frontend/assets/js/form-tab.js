@@ -1,19 +1,38 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
     const forms = document.querySelectorAll('.form');
 
     tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-            // Убираем активный класс со всех вкладок и форм
+        tab.addEventListener('click', () => {
             tabs.forEach(t => t.classList.remove('active'));
-            forms.forEach(f => f.classList.remove('active'));
+            tab.classList.add('active');
 
-            // Добавляем активный класс к выбранной вкладке и соответствующей форме
-            this.classList.add('active');
-            const targetForm = document.querySelector(`.form-${this.dataset.tab}`);
-            if (targetForm) {
-                targetForm.classList.add('active');
-            }
+            forms.forEach(form => {
+                if (form.classList.contains(`form-${tab.dataset.tab}`)) {
+                    form.classList.add('active');
+                } else {
+                    form.classList.remove('active');
+                }
+            });
         });
     });
 });
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Open default tab
+document.getElementById("defaultOpen").click();
