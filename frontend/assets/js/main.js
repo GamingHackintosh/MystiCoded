@@ -20,6 +20,9 @@ function validateDateFormat(date) {
 function generateMatrix(name, date, gender) {
     // Здесь должен быть ваш код для генерации матрицы
     // Вставьте соответствующие значения в SVG-элементы
+    document.querySelector('.name').textContent = name;
+    document.querySelector('.date_birthJS').textContent = date;
+    // Добавьте логику для расчета и вставки значений в элементы SVG
 }
 
 // Event listener for calculate button

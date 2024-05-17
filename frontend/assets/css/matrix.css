@@ -23,8 +23,76 @@
     margin-bottom: 20px;
 }
 
-.dannie {
-    margin-bottom: 20px;
+/*===== Таблица =====*/
+.Data-Table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.Data-Table thead tr {
+    background-color: #7DDC32;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+.Data-Table th,
+.Data-Table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+
+.Data-Table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+.Data-Table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.Data-Table tbody tr:last-of-type {
+    border-bottom: 2px solid #7DDC32;
+}
+.Data-Table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.Data-Table th:first-child,
+.Data-Table td:first-child {
+    border-left: 2px solid #7DDC32;
+}
+.Data-Table th:last-child,
+.Data-Table td:last-child {
+    border-right: 2px solid #7DDC32;
+}
+
+.tip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.znak {
+    display: inline-block;
+    width: 24px;
+}
+.znak:hover + .tip {
+    display: block;
+}
+
+.firstTH {
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+.nameOfChakra {
+    font-weight: bold;
+    color: #333;
 }
 
 .name, .date_birth, .age, .mapOfHealth {
@@ -32,16 +100,6 @@
     margin-bottom: 10px;
 }
 
-.dannieTable {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.dannieTable th, .dannieTable td {
-    border: 1px solid #000;
-    padding: 8px;
-    text-align: left;
-}
 
 .strokeTable {
     background-color: #f8f8f8;
