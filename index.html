@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калькулятор Матрица Судьбы</title>
-    <link rel="stylesheet" href="frontend/assets/css/reset.css">
-    <link rel="stylesheet" href="frontend/assets/css/main.css">
-    <link rel="stylesheet" href="frontend/assets/css/form.css">
-    <link rel="stylesheet" href="frontend/assets/css/matrix.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Matrix/matrix.html"><b>МАТРИЦА</b></a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <div class="container">
             <section class="main-left">
@@ -35,7 +41,7 @@
                                 <label for="fid-1">М</label>
                             </div>
                             <div class="form_toggle-item item-2">
-                                <input id="fid-2" type="radio" name="gender" value="woman" checked>
+                                <input id="fid-2" type="radio" name="gender" value="woman" checked="">
                                 <label for="fid-2">Ж</label>
                             </div>
                         </div>
@@ -65,99 +71,14 @@
                         <button class="btn">Рассчитать детскую матрицу</button>
                     </form>
                 </div>
-            </section>            
+            </section>
+            
             
             <section class="main-right">
-                <img src="frontend/assets/img/main-right/background-1.webp" alt="background-1" class="photo">
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="matrixBox">
-                <div class="matrixBox-Left">
-                    <div id="svgContainer"></div>
-                </div>
-                <div class="matrixBox-Right">
-                    <div class="decryption">
-                        <span class="zag">Ваша матрица судьбы</span>
-                        <div class="Data">
-                            <span class="name">ммв</span>
-                            <span class="date_birth">Дата рождения: <span class="date_birthJS"></span> </span>
-                            <span class="age">Возраст: <span class="ageJS">NaN</span></span>
-                        </div>
-                        <div>
-                            <span class="mapOfHealth">Карта здоровья</span>
-                        </div>
-                        <div>
-                            <table class="Data-Table">
-                                <thead>
-                                    <tr>
-                                        <th class="firstTH"></th>
-                                        <th class="nameOfChakra" align="left" width="200px">Название чакры</th>
-                                        <th class="nameOfChakra" align="left" width="70px">Физика</th>
-                                        <th class="nameOfChakra" align="left" width="70px">Энергия</th>
-                                        <th class="nameOfChakra" align="left" width="70px">Эмоция</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH seven elemTable">7</td>
-                                        <td class="elemTable seven nameOfChakra">Сахасрара</td>
-                                        <td align="center" id="sevenPhisic">NaN</td>
-                                        <td align="center" id="sevenEnergy">Nan</td>
-                                        <td align="center" id="sevenEmo">NaN</td>
-                                    </tr>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH elemTable six">6</td>
-                                        <td class="elemTable six nameOfChakra">Аджна</td>
-                                        <td align="center" id="sixPhisic">NaN</td>
-                                        <td align="center" id="sixEnergy">NaN</td>
-                                        <td align="center" id="sixEmo">NaN</td>
-                                    </tr>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH elemTable five">5</td>
-                                        <td class="elemTable five nameOfChakra">Вишудха</td>
-                                        <td align="center" id="fivePhisic">NaN</td>
-                                        <td align="center" id="fiveEnergy">NaN</td>
-                                        <td align="center" id="fiveEmo">NaN</td>
-                                    </tr>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH elemTable four">4</td>
-                                        <td class="elemTable four nameOfChakra">Анахата</td>
-                                        <td align="center" id="fourPhisic">NaN</td>
-                                        <td align="center" id="fourEnergy">NaN</td>
-                                        <td align="center" id="fourEmo">NaN</td>
-                                    </tr>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH elemTable three">3</td>
-                                        <td class="elemTable three nameOfChakra">Манипура</td>
-                                        <td align="center" id="threePhisic">NaN</td>
-                                        <td align="center" id="threeEnergy">NaN</td>
-                                        <td align="center" id="threeEmo">NaN</td>
-                                    </tr>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH elemTable two">2</td>
-                                        <td class="elemTable two nameOfChakra">Свадхистана</td>
-                                        <td align="center" id="twoPhisic">NaN</td>
-                                        <td align="center" id="twoEnergy">NaN</td>
-                                        <td align="center" id="twoEmo">NaN</td>
-                                    </tr>
-                                    <tr class="strokeTable">
-                                        <td class="firstTH elemTable one">1</td>
-                                        <td class="elemTable one nameOfChakra">Муладхара</td>
-                                        <td align="center" id="onePhisic">NaN</td>
-                                        <td align="center" id="oneEnergy">NaN</td>
-                                        <td align="center" id="oneEmo">NaN</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                <img src="assets/img/main-right/background-1.webp" alt="background-1" class="photo">
             </section>
         </div>
     </main>
-    <script src="frontend/assets/js/main.js"></script>
-    <script src="frontend/assets/js/form-tab.js"></script>
+    <script src="assets/js/form-tab.js"></script>
 </body>
 </html>
