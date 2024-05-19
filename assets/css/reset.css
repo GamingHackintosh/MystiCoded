@@ -84,7 +84,7 @@ header nav a {
 
 /*===== BUTTONS =====*/
 button {
-    background-color: #89c194;
+    background-color: #009688;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -97,7 +97,7 @@ button:hover {
 /*=== Стиль кнопки ===*/
 .btn {
     padding: 12px 20px;
-    background-color: #a1dbab;
+    background-color: #009688;
     margin-top: 10px;
     border-radius: 4px;
     color: #fff;

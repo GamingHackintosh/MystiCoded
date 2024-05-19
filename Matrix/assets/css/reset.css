@@ -1,65 +1,171 @@
-/*===== Сброс стилей =====*/
+/*===== RESET CSS =====*/
+
+/*===== MAIN CSS =====*/
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    padding: 0;
+    background-color: #f0f4f8;
 }
-.container {
+
+header {
+    background-color: #009688;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    max-width: 1200px;
+}
+
+header nav ul li a:hover {
+    background: #00796b;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
     margin: 0 auto;
 }
 
-main {
-    padding: 20px;
+.main-left, .main-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 
-/*===== HEADER =====*/
-header {
-    background-color: #1976d2;
-    color: white;
-    padding: 10px 20px;
+.main-left {
     text-align: center;
 }
-header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+
+.main-left h1 {
+    font-size: 2rem;
 }
 
-
-svg {
-    width: 100%;
-    height: auto;
+.main-left p {
+    font-size: 1rem;
 }
 
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
 
-/*===== BUTTONS =====*/
-button {
-    background-color: #89c194;
+.tab {
+    background: #009688;
     color: white;
     border: none;
     padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 25px;
     cursor: pointer;
-}
-button:hover {
-    background-color: #a1dbab;
+    transition: background 0.3s;
 }
 
-/*=== Стиль кнопки ===*/
-.btn {
-    padding: 12px 20px;
-    background-color: #a1dbab;
-    margin-top: 10px;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.tab:hover, .tab.active {
+    background: #00796b;
 }
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form.active {
+    display: flex;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form_input input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.form_toggle {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form_toggle-item {
+    margin: 0 10px;
+}
+
+.form_toggle-item input {
+    margin-right: 5px;
+}
+
+.btn {
+    background: #009688;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
 .btn:hover {
-    background-color: #89c194;
+    background: #00796b;
+}
+
+.main-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.main-right img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
 }
