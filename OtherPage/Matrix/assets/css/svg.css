@@ -1,0 +1,14 @@
+/* Стили для контейнера SVG */
+.svg-container {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,50 @@
+/*===== MAIN =====*/
+.main-right {
+    max-width: 45%;
+    position: relative;
+}
+.main-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/*===== MAIN (Изображения) =====*/
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.image-container:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+/* Стиль для текста на изображении */
+.image-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.image-container:hover .image-text {
+    transform: scale(1.05);
+    color: #f8f9fa;
+}
+
+.image-text h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+.image-text p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}

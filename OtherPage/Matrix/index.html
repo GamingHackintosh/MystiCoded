@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет Матрицы Судьбы</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/svg.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="header-info">
+                <h1>Расчет Матрицы Судьбы</h1>
+            </div>
+            <nav class="header-nav">
+                <button class="tab" onclick= "location.href='../../index.html'" >Главная</button>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <div class="container main">
+            <section class="main-left">
+                <form id="matrixForm" class="form form-matrixBox">
+                    <div class="form_input">
+                        <input id="name" type="text" placeholder="Ваше имя*" required>
+                        <input id="date" type="date" placeholder="Дата рождения*" required>
+                    </div>
+                    <div class="form_toggle">
+                        <div class="form_toggle-item item-1">
+                            <input id="fid-1" type="radio" name="gender" value="man" checked>
+                            <label for="fid-1">М</label>
+                        </div>
+                        <div class="form_toggle-item item-2">
+                            <input id="fid-2" type="radio" name="gender" value="woman">
+                            <label for="fid-2">Ж</label>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Рассчитать</button>
+                </form>
+            </section>
+            <section class="main-right">
+                <div class="image-container">
+                    <img src="assets/img/background/background-1.webp" alt="main-right_img">
+                    <div class="image-text">
+                        <h2>Матрица Судьбы</h2>
+                        <p>Узнайте свою судьбу и получите полезные советы для улучшения жизни.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/matrix-calculator.js"></script>
+</body>
+</html>

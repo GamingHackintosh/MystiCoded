@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/Header.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/svg.css">
     <link rel="stylesheet" href="assets/css/info-block.css">
     <link rel="stylesheet" href="assets/css/Year-by-Year.css">
 </head>
@@ -17,7 +18,7 @@
     <header>
         <nav class="navbar">
             <div class="header-info">
-                <h1>Матрица Судьбы</h1>
+                <h1>MystiCoded</h1>
             </div>
         </nav>
     </header>
@@ -30,53 +31,10 @@
                 <p>Получите расчет вашей Матрицы Судьбы! Узнайте совместимость, детскую, финансовую матрицу и матрицу личного бренда с полной автоматической расшифровкой и рекомендациями от психолога. Улучшите свою жизнь, работая с энергиями вашей матрицы.</p>
                 
                 <div class="tabs">
-                    <button class="tab active" data-tab="matrixBox">Матрица</button>
-                    <button class="tab" data-tab="financial">Финансовая</button>
-                    <button class="tab" data-tab="compatibility">Совместимость</button>
-                    <button class="tab" data-tab="child">Детская</button>
-                </div>
-                
-                <div class="forms">
-                    <form class="form form-matrixBox">
-                        <div class="form_input">
-                            <input id="name" type="text" placeholder="Ваше имя*">
-                            <input id="date" type="date" placeholder="Дата рождения*">
-                        </div>
-                        <div class="form_toggle">
-                            <div class="form_toggle-item item-1">
-                                <input id="fid-1" type="radio" name="gender" value="man">
-                                <label for="fid-1">М</label>
-                            </div>
-                            <div class="form_toggle-item item-2">
-                                <input id="fid-2" type="radio" name="gender" value="woman" checked="">
-                                <label for="fid-2">Ж</label>
-                            </div>
-                        </div>
-                        <button class="btn" type="submit">Рассчитать</button>
-                    </form>
-                    <form class="form form-financial">
-                        <div class="form_input">
-                            <input id="name-financial" type="text" placeholder="Ваше имя*">
-                            <input id="date-financial" type="date" placeholder="Дата рождения*">
-                        </div>
-                        <button class="btn">Рассчитать финансовую матрицу</button>
-                    </form>
-                    <form class="form form-compatibility">
-                        <div class="form_input">
-                            <input id="name-compatibility" type="text" placeholder="Ваше имя*">
-                            <input id="partner-name" type="text" placeholder="Имя партнера*">
-                            <input id="date-compatibility" type="date" placeholder="Дата рождения*">
-                            <input id="partner-date" type="date" placeholder="Дата рождения партнера*">
-                        </div>
-                        <button class="btn">Рассчитать совместимость</button>
-                    </form>
-                    <form class="form form-child">
-                        <div class="form_input">
-                            <input id="child-name" type="text" placeholder="Имя ребенка*">
-                            <input id="child-date" type="date" placeholder="Дата рождения ребенка*">
-                        </div>
-                        <button class="btn">Рассчитать детскую матрицу</button>
-                    </form>
+                    <button class="tab" onclick="location.href='OtherPage/Matrix/index.html'">Матрица</button>
+                    <button class="tab" onclick="location.href='financial.html'">Финансовая</button>
+                    <button class="tab" onclick="location.href='compatibility.html'">Совместимость</button>
+                    <button class="tab" onclick="location.href='child.html'">Детская</button>
                 </div>
             </section>
             <section class="main-right">
@@ -141,7 +99,7 @@
             </section>
         </div>
         
-        <div class="container year-by-year-container">
+        <div class="container year-by-year">
             <section class="year-by-year-section">
                 <div class="year-controls">
                     <div class="year-arrow" onclick="changeYear('prev')">◀</div>
@@ -225,10 +183,6 @@
                 </div>
             </section>
         </div>
-        
-        
-        
-        
 
     </main>
 

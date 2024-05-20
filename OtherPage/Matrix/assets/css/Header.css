@@ -1,0 +1,55 @@
+/*===== HEADER =====*/
+header {
+    background-color: #009688;
+    width: 70%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 20px 8px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*===== NAVIGATION =====*/
+.navbar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-nav .tab {
+    background-color: #ffffff;
+    color: #009688;
+    padding: 10px 20px;
+    border: 2px solid #009688;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-nav .tab:hover {
+    background-color: #00796b;
+    color: #ffffff;
+}
+
+/*=== TEXT (HEADER) =====*/
+.header-info {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
