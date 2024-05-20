@@ -1,6 +1,6 @@
 /*===== Сброс стилей =====*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gilroy', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f4f8;
@@ -16,69 +16,6 @@ body {
 
 main {
     padding: 20px;
-}
-
-/*===== HEADER =====*/
-header {
-    background-color: #009688;
-    width: 70%;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center
-}
-
-header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-/*===== NAVIGATION =====*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-.navbar ul li {
-    margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background 0.3s, color 0.3s;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-}
-
-.navbar ul li a:hover {
-    background: #00796b;
-}
-
-.navbar ul li .login-btn {
-    background-color: white;
-    color: #009688;
-    border-radius: 25px;
-}
-.navbar ul li .login-btn:hover {
-    background-color: #f0f4f8;
-    color: #00796b;
-}
-
-.navbar ul li a i {
-    margin-right: 8px;
 }
 
 
