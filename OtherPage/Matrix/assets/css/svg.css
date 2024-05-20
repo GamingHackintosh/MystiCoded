@@ -13,11 +13,20 @@
 svg {
     max-width: 100%;
     height: auto;
+    color: black;
 }
-
 text {
-    fill: black;
-    font-family: Arial, sans-serif;
+    color: black;
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
 }
 
 .personal-calculation-table {
@@ -48,4 +57,22 @@ text {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+/*=== Animation SVG =====*/
+.trans {
+    transform: rotateY(0deg);
+}
+.transCLOSE {
+    transition: all 0.5s linear 0s;
+    transform: rotateX(90deg);
+}
+.transOPEN {
+    transition: all 0.5s linear 0s;
+    transform: rotateX(0deg);
+}
+.obch div {
+    border-radius: 50%;
+    text-align: center;
+    line-height: 10%;
 }

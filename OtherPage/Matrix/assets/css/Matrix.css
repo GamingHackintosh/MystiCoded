@@ -1,50 +1,62 @@
-.svg-container {
-    width: 600px;
-    margin-top: 20px;
+.matrix-right {
     text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: black;
 }
 
-svg {
-    max-width: 100%;
-    height: auto;
+.title {
+    font-size: 18px;
+    margin: 5px;
+    font-weight: bold;
 }
 
-text {
-    fill: black;
-    font-family: Arial, sans-serif;
+.subtitle {
+    font-size: 15px;
+    margin: 5px;
+    color: #666666;
 }
 
-.personal-calculation-table {
+.tabl {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 2px;
 }
 
-.personal-calculation-table th, .personal-calculation-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
+.header-row {
+    font-size: 12px;
+    font-weight: bold;
+    background: #f4f4f6;
+    color: #000000;
 }
 
-.personal-calculation-table th {
-    background-color: #f2f2f2;
+.header-row td {
+    background: #f4f4f6;
     text-align: center;
+    vertical-align: middle;
 }
 
-.personal-calculation-table td {
+.chakra-row {
+    color: #FFFFFF;
+}
+
+.chakra-row td {
     text-align: center;
+    vertical-align: middle;
 }
 
-.round {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #f1f1f1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+#chakra7 { background: #993399; }
+#chakra6 { background: #3366ff; }
+#chakra5 { background: #33ccff; }
+#chakra4 { background: #66cc66; }
+#chakra3 { background: #ffff99; color: #000000; }
+#chakra2 { background: #ff9900; }
+#chakra1 { background: #cc3333; }
+
+.total-row {
+    font-weight: bold;
+    background: #cccccc;
+}
+
+.total-row td {
+    background: #cccccc;
+    text-align: center;
+    vertical-align: middle;
 }

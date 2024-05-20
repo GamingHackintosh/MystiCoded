@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расчет Матрицы Судьбы</title>
-    <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
@@ -30,17 +29,7 @@
                 <form id="matrixForm" class="form form-matrixBox">
                     <div class="form_input">
                         <input id="name" type="text" placeholder="Ваше имя*" required>
-                        <input id="date" type="date" placeholder="Дата рождения*" required>
-                    </div>
-                    <div class="form_toggle">
-                        <div class="form_toggle-item item-1">
-                            <input id="fid-1" type="radio" name="gender" value="man" checked>
-                            <label for="fid-1">М</label>
-                        </div>
-                        <div class="form_toggle-item item-2">
-                            <input id="fid-2" type="radio" name="gender" value="woman">
-                            <label for="fid-2">Ж</label>
-                        </div>
+                        <input id="dob" type="date" placeholder="Дата рождения*" required>
                     </div>
                     <button class="btn" type="submit">Рассчитать</button>
                 </form>
@@ -62,9 +51,70 @@
                 <div id="svg-container" class="svg-container"></div>
             </section>
             <section class="matrix-right">
-                <div id="personal-calculation" class="personal-calculation"></div>
+                <div class="karta blockCalcTop">
+                    <div class="title">Персональный расчет</div>
+                    <div class="subtitle">Карта здоровья</div>
+                    <table class="tabl">
+                        <tbody>
+                            <tr class="header-row">
+                                <td>НАЗВАНИЕ ЧАКРЫ</td>
+                                <td>ФИЗИКА</td>
+                                <td>ЭНЕРГИЯ</td>
+                                <td>ЭМОЦИИ</td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#993399;">
+                                <td id="chakra7">7. Сахасрара</td>
+                                <td id="n33"></td>
+                                <td id="n34"></td>
+                                <td id="n35"></td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#3366ff;">
+                                <td id="chakra6">6. Аджна</td>
+                                <td id="n36"></td>
+                                <td id="n37"></td>
+                                <td id="n38"></td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#33ccff;">
+                                <td id="chakra5">5. Вишудха</td>
+                                <td id="n39"></td>
+                                <td id="n40"></td>
+                                <td id="n41"></td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#66cc66;">
+                                <td id="chakra4">4. Анахата</td>
+                                <td id="n42"></td>
+                                <td id="n43"></td>
+                                <td id="n44"></td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#ffff99;">
+                                <td id="chakra3">3. Манипура</td>
+                                <td id="n45"></td>
+                                <td id="n46"></td>
+                                <td id="n47"></td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#ff9900;">
+                                <td id="chakra2">2. Свадхистана</td>
+                                <td id="n48"></td>
+                                <td id="n49"></td>
+                                <td id="n50"></td>
+                            </tr>
+                            <tr class="chakra-row" style="background:#cc3333;">
+                                <td id="chakra1">1. Муладхара</td>
+                                <td id="n51"></td>
+                                <td id="n52"></td>
+                                <td id="n53"></td>
+                            </tr>
+                            <tr class="total-row">
+                                <td id="chakra">ИТОГО</td>
+                                <td id="n54"></td>
+                                <td id="n55"></td>
+                                <td id="n56"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
-        </div>
+        </div>    
     </main>
 
     <!-- SCRIPTS -->

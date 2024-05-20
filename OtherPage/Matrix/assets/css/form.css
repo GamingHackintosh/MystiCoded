@@ -14,27 +14,5 @@
     border: 1px solid #ced4da;
     border-radius: 4px;
     font-size: 16px;
-}
-
-.form_toggle {
-    display: flex;
-    margin: 10px 0;
-    padding: 10px 0;
-}
-
-.form_toggle-item input {
-    display: none;
-}
-.form_toggle-item label {
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 48%;
-    text-align: center;
-    background-color: #f8f9fa;
-}
-.form_toggle-item input:checked + label {
-    background-color: #009688;
-    color: #ffffff;
+    font-family: 'Gilroy', sans-serif;
 }
