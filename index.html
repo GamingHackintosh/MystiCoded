@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/info-block.css">
+    <link rel="stylesheet" href="assets/css/Year-by-Year.css">
 </head>
 <body>
     <header>
@@ -137,15 +138,12 @@
             </section>
         </div>
         
-        <div class="container Year-by-Year">
-            <section class="Year-by-Year">
-                <div style="display: grid; grid-template-columns: 30px 150px 30px; margin: 10px; justify-items: center; align-items: center;">
-                    <div style="cursor: pointer; font-size: 19px; color: #049887;">
-                        <span onclick="changeYear('prev')">◀</span>
-                    </div>
-                    <div style="width: 100%;">
-                        <select name="pogodam" id="year-select" style="border: 1px #CCCCCC solid; border-radius:3px; padding: 3px; cursor: pointer; text-align: center; width: 100%;" onchange="displayYearInfo()">
-                            <option value="0">0</option>
+        <div class="container year-by-year-container">
+            <section class="year-by-year-section">
+                <div class="year-controls">
+                    <div class="year-arrow" onclick="changeYear('prev')">◀</div>
+                    <div class="year-select-container">
+                        <select name="pogodam" id="year-select" onchange="displayYearInfo()">
                             <option value="1">1-2</option>
                             <option value="2">2-3</option>
                             <option value="3">3-4</option>
@@ -211,13 +209,19 @@
                             <option value="63">78-79</option>
                         </select>
                     </div>
-                    <div style="cursor: pointer; font-size: 19px; color: #049887;">
-                        <span onclick="changeYear('next')">▶</span>
-                    </div>
+                    <div class="year-arrow" onclick="changeYear('next')">▶</div>
                 </div>
-                <div id="year-info" style="margin: 10px; padding: 10px; border: 1px solid #e0e0e0; border-radius: 5px;"></div>
+                <div id="year-info" class="year-info">
+                    <h3>В позитивном значении:</h3>
+                    <p id="positive-info"></p>
+                    <h3>В негативном ключе:</h3>
+                    <p id="negative-info"></p>
+                </div>
             </section>
         </div>
+        
+        
+        
         
 
     </main>
