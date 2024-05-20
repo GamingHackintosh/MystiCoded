@@ -6,7 +6,6 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .year-by-year-section {
     text-align: center;
     display: flex;
@@ -19,6 +18,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
 .year-arrow {
@@ -26,38 +26,53 @@
     cursor: pointer;
     padding: 10px;
     user-select: none;
-    color: #007bff;
+    color: #009688;
+    transition: color 0.3s ease;
 }
-
 .year-arrow:hover {
-    color: #0056b3;
+    color: #009688;
 }
 
 .year-select-container {
     margin: 0 10px;
 }
-
 #year-select {
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#year-select:focus {
+    border-color: #009688;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .year-info {
     text-align: left;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.year-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .year-info h3 {
     margin-top: 0;
-    color: #495057;
+    color: #009688;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 5px;
+    font-size: 1.2em;
 }
-
 .year-info p {
     margin-bottom: 10px;
     color: #343a40;
+    line-height: 1.6;
+    font-size: 1em;
+    padding-left: 10px;
+    border-left: 3px solid #009688;
 }
