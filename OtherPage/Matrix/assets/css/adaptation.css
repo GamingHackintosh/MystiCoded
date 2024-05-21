@@ -72,9 +72,6 @@
         flex-direction: column;
         padding: 20px;
     }
-    .matrix-left {
-        display: none;
-    }
     .matrix-right {
         width: 90%;
         margin-top: 20px;
