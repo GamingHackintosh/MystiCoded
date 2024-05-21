@@ -1,16 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap');
 @font-face {
     font-family: 'Gilroy';
-    src:    url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
-            url('../fonts/GilroyGilroy-Regular.ttf') format('truetype');
+    src: url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+         url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy';
-    src:    url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
-            url('../fonts/GilroyGilroy-Bold.ttf') format('truetype');
+    src: url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+         url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
 }
