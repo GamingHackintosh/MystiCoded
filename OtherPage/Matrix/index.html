@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расчет Матрицы Судьбы</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Расчет Матрицы Судьбы">
+    <meta name="keywords" content="матрица судьбы, онлайн расчет, совместимость, финансовая матрица, матрица личного бренда, психология">
+    <meta name="author" content="MystiCoded">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Калькулятор Матрица Судьбы">
+    <meta property="og:description" content="Расчет Матрицы Судьбы">
+    <meta property="og:image" content="assets/img/social-preview.png">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Калькулятор Матрица Судьбы">
+    <meta name="twitter:description" content="Расчет Матрицы Судьбы">
+    <meta name="twitter:image" content="assets/img/social-preview.png">
+
+    <!-- Stylesheets -->    
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/adaptation.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Header.css">
@@ -26,14 +45,17 @@
     <main>
         <div class="container main">
             <section class="main-left">
-                <form id="matrixForm" class="form form-matrixBox">
+                <form id="matrixForm" class="form form-matrixBox" onsubmit="calculateAge(event)">
                     <div class="form_input">
                         <input id="name" type="text" placeholder="Ваше имя*" required>
                         <input id="dob" type="date" placeholder="Дата рождения*" required>
                     </div>
                     <button class="btn" type="submit">Рассчитать</button>
                 </form>
-            </section>
+                <div id="ageDisplay" class="age-display" style="display: none;">
+                    <p id="ageText"></p>
+                </div>
+            </section>            
             <section class="main-right">
                 <div class="image-container">
                     <img src="assets/img/background/background-1.webp" alt="main-right_img">
@@ -51,7 +73,7 @@
                 <div id="svg-container" class="svg-container"></div>
             </section>
             <section class="matrix-right">
-                <div class="karta blockCalcTop">
+                <div class="karta">
                     <div class="title">Персональный расчет</div>
                     <div class="subtitle">Карта здоровья</div>
                     <table class="tabl">
@@ -62,50 +84,50 @@
                                 <td>ЭНЕРГИЯ</td>
                                 <td>ЭМОЦИИ</td>
                             </tr>
-                            <tr class="chakra-row" style="background:#993399;">
-                                <td id="chakra7">7. Сахасрара</td>
+                            <tr class="chakra-row" id="chakra7">
+                                <td>7. Сахасрара</td>
                                 <td id="n33"></td>
                                 <td id="n34"></td>
                                 <td id="n35"></td>
                             </tr>
-                            <tr class="chakra-row" style="background:#3366ff;">
-                                <td id="chakra6">6. Аджна</td>
+                            <tr class="chakra-row" id="chakra6">
+                                <td>6. Аджна</td>
                                 <td id="n36"></td>
                                 <td id="n37"></td>
                                 <td id="n38"></td>
                             </tr>
-                            <tr class="chakra-row" style="background:#33ccff;">
-                                <td id="chakra5">5. Вишудха</td>
+                            <tr class="chakra-row" id="chakra5">
+                                <td>5. Вишудха</td>
                                 <td id="n39"></td>
                                 <td id="n40"></td>
                                 <td id="n41"></td>
                             </tr>
-                            <tr class="chakra-row" style="background:#66cc66;">
-                                <td id="chakra4">4. Анахата</td>
+                            <tr class="chakra-row" id="chakra4">
+                                <td>4. Анахата</td>
                                 <td id="n42"></td>
                                 <td id="n43"></td>
                                 <td id="n44"></td>
                             </tr>
-                            <tr class="chakra-row" style="background:#ffff99;">
-                                <td id="chakra3">3. Манипура</td>
+                            <tr class="chakra-row" id="chakra3">
+                                <td>3. Манипура</td>
                                 <td id="n45"></td>
                                 <td id="n46"></td>
                                 <td id="n47"></td>
                             </tr>
-                            <tr class="chakra-row" style="background:#ff9900;">
-                                <td id="chakra2">2. Свадхистана</td>
+                            <tr class="chakra-row" id="chakra2">
+                                <td>2. Свадхистана</td>
                                 <td id="n48"></td>
                                 <td id="n49"></td>
                                 <td id="n50"></td>
                             </tr>
-                            <tr class="chakra-row" style="background:#cc3333;">
-                                <td id="chakra1">1. Муладхара</td>
+                            <tr class="chakra-row" id="chakra1">
+                                <td>1. Муладхара</td>
                                 <td id="n51"></td>
                                 <td id="n52"></td>
                                 <td id="n53"></td>
                             </tr>
                             <tr class="total-row">
-                                <td id="chakra">ИТОГО</td>
+                                <td>ИТОГО</td>
                                 <td id="n54"></td>
                                 <td id="n55"></td>
                                 <td id="n56"></td>
@@ -114,10 +136,11 @@
                     </table>
                 </div>
             </section>
-        </div>    
+        </div> 
     </main>
 
     <!-- SCRIPTS -->
     <script src="assets/js/matrix-calculator.js"></script>
+    <script src="assets/js/age-calculator.js"></script>
 </body>
 </html>

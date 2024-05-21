@@ -1,34 +1,71 @@
+/*===== MATRIX =====*/
+.matrix {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.matrix-left {
+    flex: 1;
+    padding-right: 20px;
+}
 .matrix-right {
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.matrix-right:hover {
+    background-color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*===== karta-Matrix =====*/
+.karta {
+    display: contents;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
 }
 
 .title {
-    font-size: 18px;
-    margin: 5px;
+    font-size: 24px;
+    margin: 10px 0;
     font-weight: bold;
+    color: #009688;
 }
-
 .subtitle {
-    font-size: 15px;
-    margin: 5px;
+    font-size: 20px;
+    margin: 5px 0;
     color: #666666;
 }
 
 .tabl {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 2px;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
 .header-row {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    background: #f4f4f6;
+    background: #e0e0e0;
     color: #000000;
 }
-
 .header-row td {
-    background: #f4f4f6;
+    padding: 10px;
+    background: #e0e0e0;
     text-align: center;
     vertical-align: middle;
 }
@@ -36,7 +73,6 @@
 .chakra-row {
     color: #FFFFFF;
 }
-
 .chakra-row td {
     text-align: center;
     vertical-align: middle;
@@ -54,8 +90,8 @@
     font-weight: bold;
     background: #cccccc;
 }
-
 .total-row td {
+    padding: 10px;
     background: #cccccc;
     text-align: center;
     vertical-align: middle;

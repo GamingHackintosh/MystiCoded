@@ -9,7 +9,7 @@
     border-radius: 30px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
-/*===== Фото =====*/
+/*===== Поля ввода данных =====*/
 .main-left {
     position: relative;
     padding: 20px;
@@ -33,6 +33,19 @@
     border-radius: 8px;
     opacity: 0.3;
     z-index: -1;
+}
+/*=== Возраст ===*/
+.age-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#ageText {
+    font-size: 18px;
+    color: #333;
 }
 
 /*===== MAIN (Изображения) =====*/
