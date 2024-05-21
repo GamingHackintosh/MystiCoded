@@ -1,0 +1,158 @@
+/*===== reset.css =====*/
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/*===== MAIN.css =====*/
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    .main-left, .main-right {
+        width: 90%;
+        padding: 0;
+    }
+
+    /* Left */
+    .main-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Left (text) */
+    .main-left h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .main-left p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .main-right {
+        display: none;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*===== Header.css =====*/
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header-info h1 {
+        font-size: 1.5em;
+    }
+
+    .header-info p {
+        font-size: 1em;
+    }
+}
+
+
+/*===== InfoBlock.css =====*/
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .info-blocks {
+        grid-template-columns: 1fr;
+    }
+
+    .info-block {
+        padding: 20px;
+        height: auto;
+    }
+
+    .info-block h2 {
+        font-size: 20px;
+    }
+
+    .info-block p {
+        font-size: 14px;
+    }
+}
+
+
+/*===== Year-by-Year.css =====*/
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .year-by-year-container {
+        padding: 10px;
+    }
+
+    .year-controls {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .year-arrow {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    #year-select {
+        width: 100%;
+    }
+
+    .year-info {
+        padding: 15px;
+    }
+
+    .year-info h3 {
+        font-size: 1em;
+    }
+
+    .year-info p {
+        font-size: 0.9em;
+    }
+}
+
+
+/*===== Form.css =====*/
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form_input input {
+        width: 100%;
+    }
+}

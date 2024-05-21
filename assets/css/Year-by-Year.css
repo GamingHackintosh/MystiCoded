@@ -16,11 +16,14 @@
 .year-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
     gap: 10px;
 }
 
+.year-arrow_container {
+    display: flex;
+}
 .year-arrow {
     font-size: 24px;
     cursor: pointer;

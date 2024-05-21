@@ -16,58 +16,56 @@ function sumDigits(num) {
 }
 
 function reduceToSingleDigit(num) {
-    while (num > 9) {
+    while (num > 9 && num !== 11 && num !== 22) {
         num = sumDigits(num);
     }
     return num;
 }
 
 function calculateChakraValues(day, month, year) {
-    const n1 = reduceToSingleDigit(day);
-    const n2 = reduceToSingleDigit(month);
-    const n3 = reduceToSingleDigit(year);
-    const n4 = reduceToSingleDigit(day + month);
-    const n5 = reduceToSingleDigit(day + year);
-    const n6 = reduceToSingleDigit(month + year);
-    const n7 = reduceToSingleDigit(day * month);
-    const n8 = reduceToSingleDigit(day * year);
-    const n9 = reduceToSingleDigit(month * year);
+    const d = reduceToSingleDigit(day);
+    const m = reduceToSingleDigit(month);
+    const y = reduceToSingleDigit(year);
+    const dm = reduceToSingleDigit(day + month);
+    const dy = reduceToSingleDigit(day + year);
+    const my = reduceToSingleDigit(month + year);
+    const dmy = reduceToSingleDigit(day + month + year);
 
     const values = {
         // Сахасрара
         n33: day, // Сахасрара: Физика
         n34: month, // Сахасрара: Энергия
-        n35: (day + month), // Сахасрара: Эмоции 
+        n35: day + month, // Сахасрара: Эмоции 
 
         // Аджна
-        n36: reduceToSingleDigit(day + (day + month)), // Аджна: Физика
-        n37: reduceToSingleDigit(month + reduceToSingleDigit(day + month)), // Аджна: Энергия
-        n38: (year % 100), // Аджна: Эмоции
+        n36: reduceToSingleDigit(day + month - 6), // Аджна: Физика
+        n37: reduceToSingleDigit(month + day - 11), // Аджна: Энергия
+        n38: reduceToSingleDigit(year % 100 + 8), // Аджна: Эмоции
 
         // Вишудха
-        n39: (day + month * 2), // Вишудха: Физика
-        n40: (month * 2 + 1), // Вишудха: Энергия
+        n39: day + 2 * month, // Вишудха: Физика
+        n40: 2 * month + reduceToSingleDigit(year), // Вишудха: Энергия
         n41: reduceToSingleDigit(year - month), // Вишудха: Эмоции
 
         // Анахата
         n42: reduceToSingleDigit(day - month), // Анахата: Физика
         n43: month, // Анахата: Энергия
-        n44: reduceToSingleDigit(day - (year % 100) + month), // Анахата: Эмоции
+        n44: reduceToSingleDigit(day - reduceToSingleDigit(year) + month), // Анахата: Эмоции
 
         // Манипура
-        n45: reduceToSingleDigit(day), // Манипура: Физика
+        n45: day, // Манипура: Физика
         n46: month, // Манипура: Энергия
-        n47: (day + month + year) % 100, // Манипура: Эмоции
+        n47: reduceToSingleDigit(day + month + year), // Манипура: Эмоции
 
         // Свадхистана
-        n48: (day * 2), // Свадхистана: Физика
-        n49: (month * 2), // Свадхистана: Энергия
-        n50: reduceToSingleDigit(day + month - (year % 100)), // Свадхистана: Эмоции
+        n48: reduceToSingleDigit(day * 2), // Свадхистана: Физика
+        n49: reduceToSingleDigit(month * 2), // Свадхистана: Энергия
+        n50: reduceToSingleDigit(day + month - reduceToSingleDigit(year)), // Свадхистана: Эмоции
 
         // Муладхара
         n51: day, // Муладхара: Физика
         n52: month, // Муладхара: Энергия
-        n53: reduceToSingleDigit(day + (year % 100) - month), // Муладхара: Эмоции
+        n53: reduceToSingleDigit(day + reduceToSingleDigit(year) - month), // Муладхара: Эмоции
     };
 
     // Итоговые значения
@@ -77,7 +75,6 @@ function calculateChakraValues(day, month, year) {
 
     return values;
 }
-
 
 function displayChakraValues(values) {
     for (const key in values) {
