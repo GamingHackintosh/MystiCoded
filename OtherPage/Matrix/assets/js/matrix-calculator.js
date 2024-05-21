@@ -34,41 +34,50 @@ function calculateChakraValues(day, month, year) {
     const n9 = reduceToSingleDigit(month * year);
 
     const values = {
+        // Сахасрара
         n33: day, // Сахасрара: Физика
         n34: month, // Сахасрара: Энергия
-        n35: reduceToSingleDigit(day + month), // Сахасрара: Эмоции 
-        
-        n36: // Аджна: Физика
-        n37: // Аджна: Энергия
-        n38: // Аджна: Эмоции
-        
-        n39: // Вишудха: Физика
-        n40: // Вишудха: Энергия
-        n41: // Вишудха: Эмоции
-        
-        n42: // Анахата: Физика
-        n43: // Анахата: Энергия
-        n44: // Анахата: Эмоции
-        
-        n45:// Манипура: Физика
-        n46: // Манипура: Энергия
-        n47: // Манипура: Эмоции
-        
-        n48: // Свадхистана: Физика
-        n49: // Свадхистана: Энергия
-        n50: // Свадхистана: Эмоции
-        
-        n51: // Муладхара: Физика
-        n52: // Муладхара: Энергия
-        n53: // Муладхара: Эмоции
+        n35: (day + month), // Сахасрара: Эмоции 
+
+        // Аджна
+        n36: reduceToSingleDigit(day + (day + month)), // Аджна: Физика
+        n37: reduceToSingleDigit(month + reduceToSingleDigit(day + month)), // Аджна: Энергия
+        n38: (year % 100), // Аджна: Эмоции
+
+        // Вишудха
+        n39: (day + month * 2), // Вишудха: Физика
+        n40: (month * 2 + 1), // Вишудха: Энергия
+        n41: reduceToSingleDigit(year - month), // Вишудха: Эмоции
+
+        // Анахата
+        n42: reduceToSingleDigit(day - month), // Анахата: Физика
+        n43: month, // Анахата: Энергия
+        n44: reduceToSingleDigit(day - (year % 100) + month), // Анахата: Эмоции
+
+        // Манипура
+        n45: reduceToSingleDigit(day), // Манипура: Физика
+        n46: month, // Манипура: Энергия
+        n47: (day + month + year) % 100, // Манипура: Эмоции
+
+        // Свадхистана
+        n48: (day * 2), // Свадхистана: Физика
+        n49: (month * 2), // Свадхистана: Энергия
+        n50: reduceToSingleDigit(day + month - (year % 100)), // Свадхистана: Эмоции
+
+        // Муладхара
+        n51: day, // Муладхара: Физика
+        n52: month, // Муладхара: Энергия
+        n53: reduceToSingleDigit(day + (year % 100) - month), // Муладхара: Эмоции
     };
 
+    // Итоговые значения
     values.n54 = reduceToSingleDigit(values.n33 + values.n36 + values.n39 + values.n42 + values.n45 + values.n48 + values.n51); // Итог: Физика
     values.n55 = reduceToSingleDigit(values.n34 + values.n37 + values.n40 + values.n43 + values.n46 + values.n49 + values.n52); // Итог: Энергия
     values.n56 = reduceToSingleDigit(values.n35 + values.n38 + values.n41 + values.n44 + values.n47 + values.n50 + values.n53); // Итог: Эмоции
 
     return values;
 }
+
 
 function displayChakraValues(values) {
     for (const key in values) {
