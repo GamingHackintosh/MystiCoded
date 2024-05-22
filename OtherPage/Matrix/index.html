@@ -23,13 +23,14 @@
 
     <!-- Stylesheets -->    
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/adaptation.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Header.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/svg.css">
     <link rel="stylesheet" href="assets/css/Matrix.css">
+    <link rel="stylesheet" href="assets/css/Scroll-To-Top.css">
+    <link rel="stylesheet" href="assets/css/adaptation.css">
 </head>
 <body>
     <header>
@@ -38,7 +39,7 @@
                 <h1>Расчет Матрицы Судьбы</h1>
             </div>
             <nav class="header-nav">
-                <button class="tab" onclick= "location.href='../../index.html'" >Главная</button>
+                <button class="tab" onclick= "location.href='../../'" >Главная</button>
             </nav>
         </nav>
     </header>
@@ -139,8 +140,13 @@
         </div> 
     </main>
 
+
+    <!-- Кнопка для перемещения наверх -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Наверх">▲</button>
+
     <!-- SCRIPTS -->
     <script src="assets/js/matrix-calculator.js"></script>
     <script src="assets/js/age-calculator.js"></script>
+    <script src="assets/js/Scroll-To-Top.js"></script>
 </body>
 </html>

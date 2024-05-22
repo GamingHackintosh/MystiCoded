@@ -1,4 +1,7 @@
 /*===== Сброс стилей =====*/
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Gilroy', sans-serif;
     margin: 0;

@@ -26,14 +26,15 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/adaptation.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/Scroll-To-Top.css">
     <link rel="stylesheet" href="assets/css/Header.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/svg.css">
-    <link rel="stylesheet" href="assets/css/info-block.css">
     <link rel="stylesheet" href="assets/css/Year-by-Year.css">
+    <link rel="stylesheet" href="assets/css/info-block.css">
+    <link rel="stylesheet" href="assets/css/adaptation.css">
 </head>
 <body>
     <header>
@@ -48,11 +49,12 @@
     <main>
         <div class="container main">
             <section class="main-left">
-                <h1>Онлайн расчет Матрицы Судьбы с подробной расшифровкой</h1>
-                <p>Получите расчет вашей Матрицы Судьбы! Узнайте совместимость, детскую, финансовую матрицу и матрицу личного бренда с полной автоматической расшифровкой и рекомендациями от психолога. Улучшите свою жизнь, работая с энергиями вашей матрицы.</p>
-                
+                <div class="main-left_text">
+                    <h1>Онлайн расчет Матрицы Судьбы с подробной расшифровкой</h1>
+                    <p>Получите расчет вашей Матрицы Судьбы! Узнайте совместимость, детскую, финансовую матрицу и матрицу личного бренда с полной автоматической расшифровкой и рекомендациями от психолога. Улучшите свою жизнь, работая с энергиями вашей матрицы.</p>
+                </div>
                 <div class="tabs">
-                    <button class="tab" onclick="location.href='OtherPage/Matrix/index.html'">Матрица</button>
+                    <button class="tab" onclick="location.href='OtherPage/Matrix'">Матрица</button>
                     <button class="tab" onclick="location.href='financial.html'">Финансовая</button>
                     <button class="tab" onclick="location.href='compatibility.html'">Совместимость</button>
                     <button class="tab" onclick="location.href='child.html'">Детская</button>
@@ -210,8 +212,12 @@
 
     </main>
 
+    <!-- Кнопка для перемещения наверх -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Наверх">▲</button>
+
     <!-- SCRIPTS -->
     <script src="assets/js/form-tab.js"></script>
     <script src="assets/js/Year-by-Year.js"></script>
+    <script src="assets/js/Scroll-To-Top.js"></script>
 </body>
 </html>

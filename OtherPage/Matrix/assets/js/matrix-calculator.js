@@ -32,7 +32,7 @@ function calculateChakraValues(day, month, year) {
     const dmy = reduceToSingleDigit(day + month + year);
 
     const values = {
-        // Сахасрара
+        // Сахасрара (Готова)
         n33: day, // Сахасрара: Физика
         n34: month, // Сахасрара: Энергия
         n35: day + month, // Сахасрара: Эмоции 
