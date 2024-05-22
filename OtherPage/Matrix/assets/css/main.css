@@ -19,6 +19,7 @@
     max-width: 400px;
     margin: 0 auto;
     z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 .main-left::before {
     content: "";
@@ -31,9 +32,28 @@
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    opacity: 0.3;
+    opacity: 0.6;
     z-index: -1;
 }
+/*===== HOVER-Effect =====*/
+.main-left:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 133, 89, 0.7), 0 0 40px rgba(0, 126, 148, 0.5), 0 0 60px rgba(0, 115, 229, 0.3);
+    background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
+    background-clip: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.main-left:hover .info-content {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.main-left:hover .info-image {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 /*=== Возраст ===*/
 .age-display {
     margin-top: 20px;

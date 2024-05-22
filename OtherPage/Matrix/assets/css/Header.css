@@ -1,6 +1,8 @@
 /*===== HEADER =====*/
 header {
-    background-color: #009688;
+    box-shadow: 0 0 20px rgba(0, 133, 89, 0.7), 0 0 40px rgba(0, 126, 148, 0.5), 0 0 60px rgba(0, 115, 229, 0.3);
+    background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
+    background-clip: border-box;
     width: 70%;
     margin: 30px auto;
     padding: 30px;
@@ -15,6 +17,7 @@ header h1 {
     font-weight: bold;
     color: #ffffff;
 }
+
 
 /*===== NAVIGATION =====*/
 .navbar {

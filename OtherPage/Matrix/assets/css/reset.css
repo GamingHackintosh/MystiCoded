@@ -3,7 +3,9 @@ body {
     font-family: 'Gilroy', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
+    background: linear-gradient(5deg, rgba(212, 252, 121, 0.4) 0%, rgba(150, 230, 161, 0.4) 50%, rgba(0, 198, 255, 0.4) 100%);
+    background-attachment: fixed;
+    color: #333;
 }
 .container {
     display: flex;
