@@ -1,4 +1,4 @@
-/*===== reset.css =====*/
+/*===== reset.scss =====*/
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -13,13 +13,15 @@
     }
 }
 
-/*===== HEADER.css =====*/
+/*===== HEADER.scss =====*/
 @media (max-width: 768px) {
-    .header-info h1 {
-        font-size: 1.5em;
-    }
-    .header-info p {
-        font-size: 1em;
+    .header-info {
+        h1 {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1em;
+        }
     }
 
     .header-nav {
@@ -28,8 +30,7 @@
     }
 }
 
-
-/*===== MAIN.css =====*/
+/*===== MAIN.scss =====*/
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -38,17 +39,17 @@
     .main-left {
         width: 90%;
         padding: 0;
-    }
-    .main-left {
         padding-right: 0;
     }
-    .main-left h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .main-left p {
-        font-size: 16px;
-        margin-bottom: 20px;
+    .main-left {
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
     .main-right {
         display: none;
@@ -59,7 +60,7 @@
     }
 }
 
-/*===== MATRIX.css =====*/
+/*===== MATRIX.scss =====*/
 @media (max-width: 768px) {
     .matrix {
         flex-direction: column;
@@ -83,25 +84,29 @@
     .tabl {
         width: 100%;
         display: contents;
-        font-size: 14px;
+        font-size: 12px;
         border: 1px solid #ddd;
         border-collapse: collapse;
+        line-height: 1rem;
     }
-    .tabl tr {
-        display: table-row;
-        width: 100%;
-        border-bottom: 1px solid #ddd;
-    }
-    .tabl tbody {
-        padding-top: 10px;
-    }
-    .tabl td {
-        padding: 8px;
-        text-align: center;
-        display: table-cell;
-    }
-    .tabl td:first-child {
-        width: 150px; /* Фиксированный размер для первой колонки */
+    .tabl {
+        tr {
+            display: table-row;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        tbody {
+            padding-top: 10px;
+        }
+        td {
+            padding: 8px;
+            text-align: center;
+            display: table-cell;
+
+            &:first-child {
+                width: 150px; /* Фиксированный размер для первой колонки */
+            }
+        }
     }
     .header-row, .total-row {
         display: flex;
@@ -117,10 +122,7 @@
     }
 }
 
-
-
-
-/*===== FORM.css =====*/
+/*===== FORM.scss =====*/
 @media (max-width: 768px) {
     .form {
         padding: 15px;
@@ -132,7 +134,7 @@
     }
 }
 
-/*===== SVG.css =====*/
+/*===== SVG.scss =====*/
 @media (max-width: 768px) {
     .svg-container {
         padding: 10px;

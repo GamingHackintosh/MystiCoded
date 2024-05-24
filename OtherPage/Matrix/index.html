@@ -46,7 +46,7 @@
     <main>
         <div class="container main">
             <section class="main-left">
-                <form id="matrixForm" class="form form-matrixBox" onsubmit="calculateAge(event)">
+                <form id="matrixForm" class="form form-matrixBox" onsubmit="calculateMatrix(event)">
                     <div class="form_input">
                         <input id="name" type="text" placeholder="Ваше имя*" required>
                         <input id="dob" type="date" placeholder="Дата рождения*" required>
@@ -73,6 +73,7 @@
             <section class="matrix-left">
                 <div id="svg-container" class="svg-container"></div>
             </section>
+            
             <section class="matrix-right">
                 <div class="karta">
                     <div class="title">Персональный расчет</div>
@@ -80,64 +81,94 @@
                     <table class="tabl">
                         <tbody>
                             <tr class="header-row">
+                                <td></td>
                                 <td>НАЗВАНИЕ ЧАКРЫ</td>
                                 <td>ФИЗИКА</td>
                                 <td>ЭНЕРГИЯ</td>
                                 <td>ЭМОЦИИ</td>
                             </tr>
                             <tr class="chakra-row" id="chakra7">
-                                <td>7. Сахасрара</td>
+                                <td class="chakra-number">7.</td>
+                                <td class="chakra-name">Сахасрара 
+                                    <span class="tooltip" style="color: #8b5cf6; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за состояние волос, мозга и верхней части черепа.</span></span>
+                                </td>
                                 <td id="n33"></td>
                                 <td id="n34"></td>
                                 <td id="n35"></td>
                             </tr>
                             <tr class="chakra-row" id="chakra6">
-                                <td>6. Аджна</td>
+                                <td class="chakra-number">6.</td>
+                                <td class="chakra-name">Аджна 
+                                    <span class="tooltip" style="color: #3366ff; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за состояние глаз, ушей, лица, щитовидки, плечей и рук.</span></span>
+                                </td>
                                 <td id="n36"></td>
                                 <td id="n37"></td>
                                 <td id="n38"></td>
                             </tr>
                             <tr class="chakra-row" id="chakra5">
-                                <td>5. Вишудха</td>
+                                <td class="chakra-number">5.</td>
+                                <td class="chakra-name">Вишудха
+                                    <span class="tooltip" style="color: #33ccff; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за состояние горла, нижней челюсти, щитовидки, плечей и рук.</span></span>
+                                </td>
                                 <td id="n39"></td>
                                 <td id="n40"></td>
                                 <td id="n41"></td>
                             </tr>
                             <tr class="chakra-row" id="chakra4">
-                                <td>4. Анахата</td>
+                                <td class="chakra-number">4.</td>
+                                <td class="chakra-name">Анахата 
+                                    <span class="tooltip" style="color: #8b5cf6; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за состояние сердца, легких, бронхов, ребер, и груди.</span></span>
+                                </td>
                                 <td id="n42"></td>
                                 <td id="n43"></td>
                                 <td id="n44"></td>
                             </tr>
                             <tr class="chakra-row" id="chakra3">
-                                <td>3. Манипура</td>
+                                <td class="chakra-number">3.</td>
+                                <td class="chakra-name">Манипура 
+                                    <span class="tooltip" style="color: #8b5cf6; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за состояние середины позвоночника, ЖКЕ и печени.</span></span>
+                                </td>
                                 <td id="n45"></td>
                                 <td id="n46"></td>
                                 <td id="n47"></td>
                             </tr>
                             <tr class="chakra-row" id="chakra2">
-                                <td>2. Свадхистана</td>
+                                <td class="chakra-number">2.</td>
+                                <td class="chakra-name">Свадхистана 
+                                    <span class="tooltip" style="color: #8b5cf6; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за пищеварение, аппетит, кишечник, почки, выработку адреналина, менструальные боли, болевые ощущения в нижней части спины, мочеполовую систему, потенцию</span></span>
+                                </td>
                                 <td id="n48"></td>
                                 <td id="n49"></td>
                                 <td id="n50"></td>
                             </tr>
                             <tr class="chakra-row" id="chakra1">
-                                <td>1. Муладхара</td>
+                                <td class="chakra-number">1.</td>
+                                <td class="chakra-name">Муладхара 
+                                    <span class="tooltip" style="color: #8b5cf6; border-radius: 30px; background-color: white; width: 30px;">
+                                    ?<span class="tooltiptext">Отвечает за состояние ног, ануса, крестеца и мочеполовой системы.</span></span>
+                                </td>
                                 <td id="n51"></td>
                                 <td id="n52"></td>
                                 <td id="n53"></td>
                             </tr>
                             <tr class="total-row">
-                                <td>ИТОГО</td>
-                                <td id="n54"></td>
-                                <td id="n55"></td>
-                                <td id="n56"></td>
+                                <td style="background: #e0e0e0;"></td>
+                                <td class="chakra-number">ИТОГО</td>
+                                <td id="n54" class="chakra-number"></td>
+                                <td id="n55" class="chakra-number"></td>
+                                <td id="n56" class="chakra-number"></td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table>                                                       
                 </div>
             </section>
-        </div> 
+        </div>        
     </main>
 
 
@@ -146,6 +177,7 @@
 
     <!-- SCRIPTS -->
     <script src="assets/js/matrix-calculator.js"></script>
+    <script src="assets/js/matrix-generator.js"></script>
     <script src="assets/js/age-calculator.js"></script>
     <script src="assets/js/Scroll-To-Top.js"></script>
 </body>
