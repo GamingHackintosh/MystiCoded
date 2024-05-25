@@ -1,21 +1,59 @@
 /* Стили для контейнера SVG */
 .svg-container {
     text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: black;
+    border-radius: 10px;
+    background: url("../img/shema.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 550px;
+    height: 550px;
+    transition: transform 0.3s ease;
 }
 
 svg {
-    max-width: 100%;
-    height: auto;
-    color: black;
+    width: 100%;
+    height: 100%;
+    font-family:    ui-sans-serif, 
+                    system-ui, 
+                    -apple-system, 
+                    BlinkMacSystemFont, 
+                    "Segoe UI", 
+                    Roboto, 
+                    "Helvetica Neue", 
+                    Arial, 
+                    "Noto Sans", 
+                    sans-serif, 
+                    "Apple Color Emoji", 
+                    "Segoe UI Emoji", 
+                    "Segoe UI Symbol", 
+                    "Noto Color Emoji";
 }
-text {
-    color: black;
-}
+    #black-dots{fill: #0a1935}
+    #white-dots{fill: #fff; stroke: #0a1935; stroke-width: 1;}
+    #main-circle{fill: none; stroke-width: 1;}
+    #dot-names{fill: #0a1935;}
+    #dot-values{font-family: sans-serif; letter-spacing: -1px; font-weight: 600;}
+
+    .fill-red {fill: #E11D48;}
+    .fill-orange {fill: #f7a648;}
+    .fill-yellow {fill: #efdb28;}
+    .fill-green {fill: #7ddc32;}
+    .fill-light-blue {fill: #27aefb;}
+    .fill-blue {fill: #2f72f3;}
+    .fill-violet {fill: #9659e3;}
+    .fill-gray-800 {fill: #1F2937;}
+
+    .ts {font-weight: 600;}
+    .ts-w {fill: #ffffff;}
+    .ts-1 {font-size: 3rem;}
+    .ts-2 {font-size: 2.2rem;}
+    .ts-3 {font-size: 1.4rem;}
+    .ts-4 {font-size: 1rem;}
+
+    .stroke-gray-800 {stroke: #1F2937;}
+    .stroke-gray-700 {stroke: #374151;}
+
+text {color: black;}
 table {
     margin: 20px auto;
     border-collapse: collapse;
@@ -43,9 +81,7 @@ th, td {
     text-align: center;
 }
 
-.personal-calculation-table td {
-    text-align: center;
-}
+.personal-calculation-table td {text-align: center;}
 
 .round {
     width: 30px;
@@ -58,9 +94,7 @@ th, td {
 }
 
 /*=== Animation SVG =====*/
-.trans {
-    transform: rotateY(0deg);
-}
+.trans { transform: rotateY(0deg); }
 .transCLOSE {
     transition: all 0.5s linear 0s;
     transform: rotateX(90deg);
@@ -69,6 +103,7 @@ th, td {
     transition: all 0.5s linear 0s;
     transform: rotateX(0deg);
 }
+
 .obch div {
     border-radius: 50%;
     text-align: center;

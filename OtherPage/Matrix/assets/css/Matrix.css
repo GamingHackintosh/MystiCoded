@@ -5,13 +5,27 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
+}
+.container.matrix {
+    background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
+    background-clip: border-box;
+    padding: 20px;
 }
 
+.matrix-left, .matrix-right {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .matrix-left {
-    flex: 1;
-    padding-right: 20px;
+    position: relative;
+    width: 570px;
+    height: 570px;
 }
+
+
 .matrix-right {
     position: relative;
     text-align: center;
