@@ -1,0 +1,63 @@
+.cookie-container {
+    position: fixed;
+    z-index: 2147483645;
+    background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
+    color: #fff;
+    width: 26%;
+    max-width: 375px;
+    border-radius: 30px;
+    padding: 30px;
+    bottom: 1em;
+    left: 1em;
+    font-size: 16px;
+    max-height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 18px rgba(0,0,0,.2);
+}
+
+.cookie-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Изменено для более сильного затемнения */
+    border-radius: 30px;
+    z-index: -1; /* Псевдоэлемент будет под контентом */
+}
+
+.cookie-content {
+    max-width: 600px;
+    text-align: center;
+    position: relative; /* Обеспечивает, что контент находится выше затемняющего слоя */
+    z-index: 1; /* Контент выше затемняющего слоя */
+}
+
+.cookie-icon {
+    height: 96px;
+    width: 96px;
+    margin-bottom: 20px;
+    background: url(../img/svg/cookies.svg);
+}
+
+
+.cookie-text {
+    margin-bottom: 20px;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-buttons button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}

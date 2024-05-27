@@ -158,3 +158,21 @@
         padding: 8px;
     }
 }
+
+
+/*===== Cookies.css =====*/
+@media (max-width: 768px) {
+    .cookie-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .cookie-content {
+        font-size: 14px;
+    }
+
+    .cookie-buttons button {
+        padding: 8px 16px;
+        margin: 4px;
+    }
+}
