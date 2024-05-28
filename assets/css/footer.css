@@ -18,4 +18,9 @@ footer {
     height: auto;
 }
 
+/*===== NAVIGATION_DOWN =====*/
+.footer_nav-icon {
+    display: flex;
+    justify-content: flex-start;
+}
 

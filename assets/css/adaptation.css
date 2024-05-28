@@ -89,7 +89,7 @@
         width: 60px;
     }
 
-    .navicon img, .footer-navbar .navicon img {
+    .header_nav-icon img, .footer_nav-icon img {
         display: none;
     }
 
@@ -99,7 +99,8 @@
 
     .nav-links a, .footer-links a {
         font-size: 1em;
-        text-align: center; /* Центрируем текст */
+        text-align: center;
+        padding: 0зч;
     }
 }
 
