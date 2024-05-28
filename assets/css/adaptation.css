@@ -66,20 +66,40 @@
 }
 
 
-/*===== Header.css =====*/
+/*===== Header and Footer.css =====*/
 /* Мобильные устройства (до 768px) */
 @media (max-width: 768px) {
-    header {
+    .navbar, .footer-navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links, .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
         width: 80%;
-        padding: 15px;
+        margin: 10px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
     }
 
-    .header-info h1 {
-        font-size: 1.5em;
+    .header-logo img, .footer-logo img {
+        width: 60px;
     }
 
-    .header-info p {
+    .navicon img, .footer-navbar .navicon img {
+        display: none;
+    }
+
+    header, footer {
+        padding: 10px 0;
+    }
+
+    .nav-links a, .footer-links a {
         font-size: 1em;
+        text-align: center; /* Центрируем текст */
     }
 }
 

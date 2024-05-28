@@ -1,9 +1,9 @@
  // Функция для расчета значений матрицы
 function calculateMatrixValues(n1, n2, n3, n4, n5, n6, n7, n8) {
     return {
-        n33: n1 + n5,
-        n34: n3 + n7,
-        n35: n5 + n7,
+        n33: n1,
+        n34: n2,
+        n35: n3,
         n36: n2 + n6,
         n37: n4 + n8,
         n38: n6 + n8,
