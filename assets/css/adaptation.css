@@ -192,3 +192,22 @@
         padding: 8px;
     }
 }
+
+
+/*===== Importance.css =====*/
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .importance-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .importance-text ul {
+        text-align: center;
+    }
+    .importance-text li {
+        padding-left: 0;
+    }
+    .importance-text li::before {
+        display: none;
+    }
+}

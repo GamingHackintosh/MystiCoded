@@ -1,0 +1,87 @@
+.importance-matrix {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+.importance-header h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.importance-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.importance-left, .importance-right {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+.importance-image {
+    text-align: center;
+}
+.importance-image img {
+    aspect-ratio: 1/1.034;
+    width: 300px;
+    height: 300px;
+    max-width: 500px;
+}
+
+.importance-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Цвет текста */
+.importance-text_red {
+    color: red;
+}
+.importance-text_orange {
+    color: orange;
+}
+.importance-text_green {
+    color: green;
+}
+.importance-text_blue {
+    color: blue;
+}
+.importance-text_purple {
+    color: purple;
+}
+
+
+.importance-text ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+.importance-text li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.importance-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.importance-button button {
+    background-color: #009688;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.importance-button button:hover {
+    background-color: #a1dbab;
+}

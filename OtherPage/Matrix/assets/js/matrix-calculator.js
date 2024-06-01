@@ -1,5 +1,18 @@
+// Функция для преобразования даты рождения в числа для матрицы
+function getNumbersFromDate(day, month) {
+    const n1 = day;
+    const n2 = month;
+    const n3 = day + month;
+    const n4 = Math.abs(day - month);
+    const n5 = Math.floor(day / 2);
+    const n6 = Math.floor(month / 2);
+    const n7 = day * 2;
+    const n8 = month * 2;
+    return { n1, n2, n3, n4, n5, n6, n7, n8 };
+}
+
  // Функция для расчета значений матрицы
-function calculateMatrixValues(n1, n2, n3, n4, n5, n6, n7, n8) {
+ function calculateMatrixValues(n1, n2, n3, n4, n5, n6, n7, n8) {
     return {
         n33: n1,
         n34: n2,
@@ -25,18 +38,7 @@ function calculateMatrixValues(n1, n2, n3, n4, n5, n6, n7, n8) {
     };
 }
 
-// Функция для преобразования даты рождения в числа для матрицы
-function getNumbersFromDate(day, month) {
-    const n1 = day;
-    const n2 = month;
-    const n3 = day + month;
-    const n4 = Math.abs(day - month);
-    const n5 = Math.floor(day / 2);
-    const n6 = Math.floor(month / 2);
-    const n7 = day * 2;
-    const n8 = month * 2;
-    return { n1, n2, n3, n4, n5, n6, n7, n8 };
-}
+
 
 // Функция для заполнения таблицы
 function populateTable(values) {

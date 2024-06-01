@@ -5,14 +5,20 @@ document.getElementById('acceptAllCookies').addEventListener('click', function()
 });
 
 // Проверка состояния cookie согласия при загрузке страницы
-window.onload = function() {
-    let cookieConsent = getCookie('cookieConsent');
-    if (!cookieConsent) {
-        document.getElementById('cookieConsent').style.display = 'block';
-    } else if (cookieConsent === 'accepted') {
-        initializeYandexMetrika();
+document.addEventListener('DOMContentLoaded', function() {
+    const cookieContainer = document.getElementById('cookieConsent');
+    const acceptAllCookiesButton = document.getElementById('acceptAllCookies');
+
+    if (!localStorage.getItem('cookieAccepted')) {
+        cookieContainer.style.display = 'block';
     }
-};
+
+    acceptAllCookiesButton.addEventListener('click', function() {
+        localStorage.setItem('cookieAccepted', 'true');
+        cookieContainer.style.display = 'none';
+    });
+});
+
 
 // Функция установки cookie
 function setCookie(name, value, days) {
