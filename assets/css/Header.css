@@ -27,7 +27,7 @@ header {
     display: flex;
     gap: 20px;
     padding: 10px;
-    background: #009688;;
+    background: #009688;
     border-radius: 20px;
 }
 .nav-links li {
@@ -43,16 +43,16 @@ header {
     font-weight: bold;
     font-size: 1em;
     padding: 5px 10px;
-    transition: color 0.3s ease, font-size 0.3s ease, transform 0.2s; 
+    transition: color 0.3s ease, font-size 0.3s ease, transform 0.2s;
 }
 .nav-links a:hover {
-    color: #00e59c; 
+    color: #00e59c;
     font-size: 1.5em;
     transform: scale(2);
 }
 .nav-links a.active {
     color: #00e59c;
-    border-bottom: 2px solid #00e59c; 
+    border-bottom: 2px solid #00e59c;
 }
 
 /*===== NAVIGATION_Logo =====*/

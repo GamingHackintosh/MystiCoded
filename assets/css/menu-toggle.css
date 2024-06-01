@@ -1,0 +1,113 @@
+/*===== MOBILE MENU =====*/
+.hamburger {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 20px;
+}
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: #009688;
+    transform: rotate(0deg);
+    transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
+}
+
+.hamburger-line {
+    background: #fff;
+    height: 2px;
+    display: block;
+    border-radius: 6px;
+    transition: transform 0.4s cubic-bezier(0.54, -0.81, 0.57, 0.57), opacity 0.2s ease;
+    position: relative;
+}
+
+.hamburger-line.first,
+.hamburger-line.second,
+.hamburger-line.third {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+}
+.menu-button-wrapper {
+    position: relative;
+    display: none;
+}
+
+.item-list {
+    position: absolute;
+    top: 60px;
+    transform: translateX(-50%) scale(0);
+    transform-origin: center;
+    transition: all 0.4s cubic-bezier(0.54, -0.10, 0.57, 0.57);
+    background-color: #303242;
+    color: #fff;
+    width: 125px;
+    padding: 25px;
+    text-align: left;
+    border-radius: 20px;
+    font-weight: 300;
+    opacity: 0;
+    user-select: none;
+}
+.item-list a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.divider {
+    background: #fff;
+    height: 1px;
+    margin: 5px 0;
+    opacity: 0.5;
+}
+
+.menu-button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.menu-button:checked ~ .item-list {
+    transform: translateX(-50%) scale(1);
+    border-radius: 20px;
+    opacity: 1;
+    user-select: auto;
+}
+
+.menu-button:checked ~ .icon-wrapper .hamburger-line.second {
+    transform: rotate(45deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.first {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-button:checked ~ .icon-wrapper .hamburger-line.third {
+    transform: translateY(-8px) rotate(45deg);
+}
+.menu-button:checked ~ .hamburger:before {
+    transform: rotate(45deg) scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .menu-button-wrapper {
+        position: relative;
+        display: block;
+        padding-right: 10px;
+    }
+}

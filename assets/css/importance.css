@@ -6,11 +6,21 @@
     margin: 20px 0;
 }
 
-.importance-header h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
+.importance-header {
     text-align: center;
+    margin: 20px 0;
+}
+.importance-header h2 {
+    font-size: 36px;
+    color: #333;
+    line-height: 1.2;
+}
+.highlight {
+    background-color: #009688;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    display: inline-block;
 }
 
 .importance-content {
@@ -33,7 +43,11 @@
     aspect-ratio: 1/1.034;
     width: 300px;
     height: 300px;
-    max-width: 500px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.importance-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
 }
 
 .importance-text {
@@ -75,7 +89,8 @@
 .importance-button button {
     background-color: #009688;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 900;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;

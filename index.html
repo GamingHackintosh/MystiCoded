@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Scroll-To-Top.css">
     <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/menu-toggle.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/form.css">
@@ -46,6 +47,25 @@
     <!--- HEADER --->
     <header>
         <nav class="navbar">
+            <div class="menu-button-wrapper">
+                <input type="checkbox" class="menu-button" id="menu-button">
+                <div class="icon-wrapper">
+                    <label class="hamburger" for="menu-button">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                    </label>
+                </div>
+                <div class="item-list">
+                    <a href="#home">Главная страница</a>
+                        <div class="divider"></div>
+                    <a href="#about">Что это такое</a>
+                        <div class="divider"></div>
+                    <a href="#year-by-year">Разбор</a>
+                        <div class="divider"></div>
+                    <a href="#contact">Контакты</a>
+                </div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Главная страница</a></li>
                 <li><a href="#about">Что это такое</a></li>
@@ -63,7 +83,7 @@
         <div class="container main" id="home">
             <section class="main-left">
                 <div class="main-left_text">
-                    <h1>Онлайн расчет Матрицы Судьбы с подробной расшифровкой</h1>
+                    <h1>Онлайн расчет <span class="highlight">Матрицы Судьбы</span> с подробной расшифровкой</h1>
                     <p>Получите расчет вашей Матрицы Судьбы! Узнайте совместимость, детскую, финансовую матрицу и матрицу личного бренда с полной автоматической расшифровкой и рекомендациями от психолога. Улучшите свою жизнь, работая с энергиями вашей матрицы.</p>
                 </div>
                 <div class="tabs">
@@ -140,7 +160,10 @@
                 <div class="importance-content">
                     <div class="importance-left">
                         <div class="importance-header">
-                            <h2>Почему важно знать свою Матрицу судьбы?</h2>
+                            <h2>
+                                Зачем нам знать <br>
+                                <span class="highlight">Матрицу судьбы</span>?
+                            </h2>
                         </div>
                         <div class="importance-image">
                             <img src="assets/img/Impotance-matrix/matrix-removebg-preview.png" alt="Матрица судьбы">
@@ -276,6 +299,7 @@
     </button>
 
     <!-- SCRIPTS -->
+    <script src="assets/js/menu-toggle.js"></script>
     <script src="assets/js/form-tab.js"></script>
     <script src="assets/js/Year-by-Year.js"></script>
     <script src="assets/js/Scroll-To-Top.js"></script>
