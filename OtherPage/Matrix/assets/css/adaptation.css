@@ -13,20 +13,55 @@
     }
 }
 
-/*===== HEADER.css =====*/
+/*===== Header and Footer.css =====*/
+/* Мобильные устройства (до 768px) */
 @media (max-width: 768px) {
-    .header-info {
-        h1 {
-            font-size: 1.5em;
-        }
-        p {
-            font-size: 1em;
-        }
+    .navbar, .footer-navbar {
+        flex-direction: column;
+        align-items: end;
     }
 
-    .header-nav {
+    .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #009688;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links, .footer-links {
+        display: none;
+    }
+
+    .header-logo img, .footer-logo img {
+        width: 60px;
+    }
+
+    .header_nav-icon img, .footer_nav-icon img {
+        display: none;
+    }
+
+    header, footer {
+        padding: 10px 0;
+    }
+
+    .nav-links a, .footer-links a {
+        font-size: 1em;
+        text-align: center;
+        padding: 0зч;
     }
 }
 

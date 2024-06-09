@@ -1,58 +1,67 @@
 /*===== HEADER =====*/
 header {
-    box-shadow: 0 0 20px rgba(0, 133, 89, 0.7), 0 0 40px rgba(0, 126, 148, 0.5), 0 0 60px rgba(0, 115, 229, 0.3);
-    background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
-    background-clip: border-box;
-    width: 70%;
-    margin: 30px auto;
     padding: 30px;
-    border-radius: 25px;
+}
+.header-logo img {
+    width: 80px;
+    height: auto;
+}
+.header_nav-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*===== NAVIGATION_UP =====*/
+.navbar, .footer-navbar{
     display: flex;
     justify-content: center;
-    box-shadow: 0px 20px 8px rgba(0, 0, 0, 0.1);
-}
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2em;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-
-/*===== NAVIGATION =====*/
-.navbar {
-    display: grid;
-    justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
 }
 
-.header-nav {
+/*===== NAVIGATION_Links =====*/
+.nav-links {
+    list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
+    padding: 10px;
+    background: #009688;
+    border-radius: 20px;
+}
+.nav-links li {
+    padding: 10px;
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 10px;
 }
 
-.header-nav .tab {
-    background-color: #ffffff;
-    color: #009688;
-    padding: 10px 20px;
-    border: 2px solid #009688;
-    border-radius: 8px;
-    font-size: 16px;
+.nav-links a {
+    text-decoration: none;
+    color: #007e94;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s ease, font-size 0.3s ease, transform 0.2s;
+}
+.nav-links a:hover {
+    color: #00e59c;
+    font-size: 1.5em;
+    transform: scale(2);
+}
+.nav-links a.active {
+    color: #00e59c;
+    border-bottom: 2px solid #00e59c;
 }
 
-.header-nav .tab:hover {
-    background-color: #00796b;
-    color: #ffffff;
+/*===== NAVIGATION_Logo =====*/
+.header_nav-icon img, .footer_nav-icon img {
+    width: 120px;
+    height: auto;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
 }
-
-/*=== TEXT (HEADER) =====*/
-.header-info {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+.header_nav-icon img:hover, .footer_nav-icon img:hover {
+    transform: scale(1.1);
 }

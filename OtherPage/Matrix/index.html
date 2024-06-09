@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/menu-toggle.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/svg.css">
     <link rel="stylesheet" href="assets/css/Matrix.css">
@@ -50,14 +51,26 @@
     <link rel="stylesheet" href="assets/css/adaptation.css">
 </head>
 <body>
+    <!--- HEADER --->
     <header>
         <nav class="navbar">
-            <div class="header-info">
-                <h1>Расчет Матрицы Судьбы</h1>
+            <div class="menu-button-wrapper">
+                <input type="checkbox" class="menu-button" id="menu-button">
+                <div class="icon-wrapper">
+                    <label class="hamburger" for="menu-button">
+                        <span class="hamburger-line first"></span>
+                        <span class="hamburger-line second"></span>
+                        <span class="hamburger-line third"></span>
+                    </label>
+                </div>
+                <div class="item-list">
+                    <a href="../../index.html">Главная страница</a>
+                        <div class="divider"></div>
+                </div>
             </div>
-            <nav class="header-nav">
-                <button class="tab" onclick= "location.href='../../'" >Главная</button>
-            </nav>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Главная страница</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -89,9 +102,7 @@
         <div class="container matrix">
             <section class="matrix-left">
                 <!-- SVG content here -->
-                <div style="position:relative; width: 570px; height: 570px;" class="svg-container">
-                    <pre style="position: absolute; display: none; right:-500px; top: 0px; bottom: 0px; width: 400px; background: #FFF;">20/25/5<br>21/26-27/7<br>22/27-28/20<br>23/28-29/8<br>24/30/15<br>25/31-32/7<br>26/32-33/10<br>27/33-34/5<br>28/35/22<br>29/36-37/6<br>30/37-38/11<br>31/38-39/18<br>32/40/7<br>33/41-42/20<br>34/42-43/13<br>35/43-44/19<br>36/45/6<br>37/46-47/11<br>38/47-48/5<br>39/48-49/22<br>40/50/17<br>41/51-52/7<br>42/52-53/8<br>43/53-54/17<br>44/55/9<br>45/56-57/10<br>46/57-58/19<br>47/58-59/11<br>48/60/10<br>49/61-62/17<br>50/62-63/7<br>51/63-64/22<br>52/65/15<br>53/66-67/8<br>54/67-68/20<br>55/68-69/7<br>56/70/5<br>57/71-72/10<br>58/72-73/5<br>59/73-74/5<br>60/75/18<br>61/76-77/22<br>62/77-78/4<br>63/78-79/17<br></pre>
-                </div>
+                <div id="matrixResult"></div>
             </section>
             
             <section class="matrix-right">
