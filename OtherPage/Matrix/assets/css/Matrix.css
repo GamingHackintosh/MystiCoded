@@ -171,3 +171,13 @@ tbody {
     opacity: 1;
 }
 
+.matrix-cell {
+    stroke: black;
+    stroke-width: 1;
+}
+.matrix-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-anchor: middle;
+    -o-table-baseline: middle;
+}
