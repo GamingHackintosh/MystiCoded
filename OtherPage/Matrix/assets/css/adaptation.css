@@ -109,8 +109,8 @@
         align-items: center;
     }
     .matrix-left {
-        width: 370px;
-        height: 370px;
+        width: 400px;
+        height: 400px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -156,7 +156,7 @@
     }
 
     #matrixResult {
-        position: relative;
+        position: absolute;
         width: 360px;
         height: 360px;
         background: url('../img/matrix-left/schema.png') no-repeat center center;
