@@ -9,15 +9,15 @@ function calculateMatrix(event) {
         return;
     }
 
-    const dateParts = dob.split('.');
+    const dateParts = dob.split('-'); 
     if (dateParts.length !== 3) {
         alert('Пожалуйста, введите дату в формате ДД.ММ.ГГГГ.');
         return;
     }
 
-    const day = parseInt(dateParts[0], 10);
+    const day = parseInt(dateParts[2], 10);
     const month = parseInt(dateParts[1], 10);
-    const year = parseInt(dateParts[2], 10);
+    const year = parseInt(dateParts[0], 10);
 
     if (isNaN(day) || isNaN(month) || isNaN(year)) {
         alert('Неверный формат даты.');
@@ -53,6 +53,7 @@ function calculateMatrix(event) {
     displayChakras(chakras);
     displayMatrixSVG(chakras);
 }
+
 
 function calculateNumber(num) {
     while (num > 22) {
