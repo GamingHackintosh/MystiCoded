@@ -189,3 +189,527 @@ tbody {
     background: url('../img/matrix-left/schema.png') no-repeat center center;
     background-size: cover;
 }
+
+
+
+/*===== Color - Circle =====*/
+.matrix-diagram {
+    font-size:4px;
+    margin:0 auto;
+    max-width:872px;
+    position:relative
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram {
+      font-size:5px
+    }
+  }
+  @media only screen and (min-width:576px) {
+    .matrix-diagram {
+      font-size:6px
+    }
+  }
+  @media only screen and (min-width:1260px) {
+    .matrix-diagram {
+      font-size:8px
+    }
+  }
+  .matrix-diagram__circle {
+    align-items:center;
+    background-color:#cacace;
+    border:2px solid transparent;
+    border-radius:50%;
+    color:#a3a3a6;
+    display:flex;
+    font-weight:500;
+    justify-content:center;
+    line-height:1;
+    position:absolute;
+    transition:color .3s,background-color .3s,border-color .3s;
+    z-index:5
+  }
+  .matrix-diagram__circle.-position-a {
+    left:3.9%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-a2 {
+    left:13%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-a1 {
+    left:19.4%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-a3 {
+    left:32.4%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-b {
+    left:50%;
+    top:3.9%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-b2 {
+    left:50%;
+    top:13.1%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-b1 {
+    left:50%;
+    top:19.5%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-b3 {
+    left:50%;
+    top:32.5%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-c {
+    right:4%;
+    top:50.1%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-c2 {
+    right:13.1%;
+    top:50.1%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-c1 {
+    right:19.5%;
+    top:50.1%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-d {
+    bottom:3.9%;
+    left:50%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-d2 {
+    bottom:13.1%;
+    left:50%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-d1 {
+    bottom:19.5%;
+    left:50%;
+    -webkit-transform:translate(-50%);
+    transform:translate(-50%)
+  }
+  .matrix-diagram__circle.-position-e {
+    left:49.9%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+  }
+  .matrix-diagram__circle.-position-e1 {
+    right:39.2%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-e2 {
+    right:34.7%;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }
+  .matrix-diagram__circle.-position-f {
+    left:16.2%;
+    top:16%
+  }
+  .matrix-diagram__circle.-position-g {
+    right:16.1%;
+    top:16.1%
+  }
+  .matrix-diagram__circle.-position-y {
+    bottom:15.9%;
+    right:16.3%
+  }
+  .matrix-diagram__circle.-position-p1 {
+    right:27.8%;
+    top:27.8%
+  }
+  .matrix-diagram__circle.-position-p2 {
+    right:23%;
+    top:23%
+  }
+  .matrix-diagram__circle.-position-p3 {
+    bottom:27.8%;
+    left:27.8%
+  }
+  .matrix-diagram__circle.-position-p4 {
+    bottom:23%;
+    left:23%
+  }
+  .matrix-diagram__circle.-position-k {
+    bottom:16.1%;
+    left:16%
+  }
+  .matrix-diagram__circle.-position-s1 {
+    left:27.8%;
+    top:27.8%
+  }
+  .matrix-diagram__circle.-position-s2 {
+    left:23%;
+    top:23%
+  }
+  .matrix-diagram__circle.-position-s3 {
+    bottom:23%;
+    right:23%
+  }
+  .matrix-diagram__circle.-position-s4 {
+    bottom:27.8%;
+    right:27.8%
+  }
+  .matrix-diagram__circle.-position-x {
+    bottom:33.7%;
+    right:33.7%
+  }
+  .matrix-diagram__circle.-position-x1 {
+    bottom:26.6%;
+    right:40.7%
+  }
+  .matrix-diagram__circle.-position-x2 {
+    bottom:40.6%;
+    right:26.6%
+  }
+  .matrix-diagram__circle.-size-lg {
+    font-size:5em;
+    height:9.143%;
+    width:9.143%
+  }
+  .matrix-diagram__circle.-size-md {
+    font-size:3em;
+    height:6.4%;
+    width:6.4%
+  }
+  .matrix-diagram__circle.-size-sm {
+    font-size:2em;
+    height:4.572%;
+    width:4.572%
+  }
+  .matrix-diagram__circle.-active {
+    color:#fff
+  }
+  .matrix-diagram__circle.-purple.-active {
+    background-color:#8a46a3;
+    border-color:#8a46a3
+  }
+  .matrix-diagram__circle.-red.-active {
+    background-color:#ef4141;
+    border-color:#ef4141
+  }
+  .matrix-diagram__circle.-yellow.-active {
+    background-color:#ffed47;
+    border-color:#ffed47;
+    color:#222831
+  }
+  .matrix-diagram__circle.-white.-active {
+    background-color:#fff;
+    border-color:#222831;
+    color:#222831
+  }
+  .matrix-diagram__circle.-blue.-active {
+    background-color:#526dfa;
+    border-color:#526dfa
+  }
+  .matrix-diagram__circle.-cyan.-active {
+    background-color:#45cfe1;
+    border-color:#45cfe1
+  }
+  .matrix-diagram__circle.-orange.-active {
+    background-color:#ffae34;
+    border-color:#ffae34
+  }
+  .matrix-diagram__circle.-green.-active {
+    background-color:#afde61;
+    border-color:#afde61
+  }
+  .matrix-diagram__number {
+    font-size:1.5em;
+    min-width:14px;
+    position:absolute;
+    text-align:center;
+    z-index:10
+  }
+  .matrix-diagram__number.-bold {
+    font-weight:700
+  }
+  .matrix-diagram__number.-position-b8 {
+    right:40.2%;
+    top:3.3%
+  }
+  .matrix-diagram__number.-position-b7 {
+    right:36.9%;
+    top:4.8%
+  }
+  .matrix-diagram__number.-position-k2 {
+    right:34.1%;
+    top:5.8%
+  }
+  .matrix-diagram__number.-position-k1 {
+    right:30.5%;
+    top:7.4%
+  }
+  .matrix-diagram__number.-position-k4 {
+    right:27.2%;
+    top:8.8%
+  }
+  .matrix-diagram__number.-position-k3 {
+    right:24.3%;
+    top:9.9%
+  }
+  .matrix-diagram__number.-position-k5 {
+    right:21%;
+    top:11.4%
+  }
+  .matrix-diagram__number.-position-k8 {
+    right:10.5%;
+    top:21.9%
+  }
+
+  .matrix-diagram__number.-position-d6 {
+    bottom:11.1%;
+    right:21%
+  }
+  .matrix-diagram__number.-position-y8 {
+    bottom:9.7%;
+    right:24.3%
+  }
+  .matrix-diagram__number.-position-d5 {
+    bottom:8.4%;
+    right:27.4%
+  }
+  .matrix-diagram__number.-position-d4 {
+    bottom:6.5%;
+    right:31.3%
+  }
+  .matrix-diagram__number.-position-d8 {
+    bottom:5.1%;
+    right:35%
+  }
+  .matrix-diagram__number.-position-d7 {
+    bottom:3.7%;
+    right:38.7%
+  }
+  .matrix-diagram__number.-position-d9 {
+    bottom:2.3%;
+    right:42.8%
+  }
+  .matrix-diagram__number.-position-g3 {
+    bottom:2.5%;
+    left:41.7%
+  }
+  .matrix-diagram__number.-position-g2 {
+    bottom:3.7%;
+    left:38.6%
+  }
+  .matrix-diagram__number.-position-g4 {
+    bottom:5%;
+    left:35.3%
+  }
+  .matrix-diagram__number.-position-g1 {
+    bottom:6.5%;
+    left:31.3%
+  }
+  .matrix-diagram__number.-position-g7 {
+    bottom:7.8%;
+    left:28.3%
+  }
+  .matrix-diagram__number.-position-g5 {
+    bottom:9.1%;
+    left:25.3%
+  }
+  .matrix-diagram__number.-position-g6 {
+    bottom:10.5%;
+    left:22.1%
+  }
+  .matrix-diagram__number.-position-t3 {
+    bottom:21.8%;
+    left:10.4%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t3 {
+      bottom:22.2%;
+      left:10.8%
+    }
+  }
+  .matrix-diagram__number.-position-t2 {
+    bottom:24.9%;
+    left:9.4%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t2 {
+      bottom:25.3%;
+      left:9.8%
+    }
+  }
+  .matrix-diagram__number.-position-t4 {
+    bottom:28%;
+    left:7.9%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t4 {
+      bottom:28.4%;
+      left:8.3%
+    }
+  }
+  .matrix-diagram__number.-position-t1 {
+    bottom:31.4%;
+    left:6.3%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t1 {
+      bottom:31.6%;
+      left:6.7%
+    }
+  }
+  .matrix-diagram__number.-position-t6 {
+    bottom:34.3%;
+    left:5.3%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t6 {
+      bottom:34.7%;
+      left:5.7%
+    }
+  }
+  .matrix-diagram__number.-position-t5 {
+    bottom:37.6%;
+    left:4.1%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t5 {
+      bottom:38%;
+      left:4.1%
+    }
+  }
+  .matrix-diagram__number.-position-t7 {
+    bottom:41.2%;
+    left:2.3%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-t7 {
+      bottom:41.6%;
+      left:2.7%
+    }
+  }
+  .matrix-diagram__number.-position-a5 {
+    left:2.8%;
+    top:40.4%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-a5 {
+      left:3.2%;
+      top:40.8%
+    }
+  }
+  .matrix-diagram__number.-position-a4 {
+    left:4.1%;
+    top:37.3%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-a4 {
+      left:4.5%;
+      top:37.7%
+    }
+  }
+  .matrix-diagram__number.-position-a6 {
+    left:5.2%;
+    top:34%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-a6 {
+      left:5.6%;
+      top:34.4%
+    }
+  }
+  .matrix-diagram__number.-position-f1 {
+    left:6.4%;
+    top:30.8%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-f1 {
+      left:6.8%;
+      top:31.2%
+    }
+  }
+  .matrix-diagram__number.-position-f3 {
+    left:7.8%;
+    top:27.6%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-f3 {
+      left:8.2%;
+      top:28%
+    }
+  }
+  .matrix-diagram__number.-position-f2 {
+    left:9.3%;
+    top:24.4%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-f2 {
+      left:9.7%;
+      top:24.8%
+    }
+  }
+  .matrix-diagram__number.-position-f4 {
+    left:10.7%;
+    top:20.7%
+  }
+  @media only screen and (min-width:400px) {
+    .matrix-diagram__number.-position-f4 {
+      left:11.1%;
+      top:21.1%
+    }
+  }
+  .matrix-diagram__number.-position-f7 {
+    left:22.1%;
+    top:10.8%
+  }
+  .matrix-diagram__number.-position-f6 {
+    left:25.5%;
+    top:9.4%
+  }
+  .matrix-diagram__number.-position-f8 {
+    left:28.8%;
+    top:8%
+  }
+  .matrix-diagram__number.-position-f5 {
+    left:32%;
+    top:6.4%
+  }
+  .matrix-diagram__number.-position-b5 {
+    left:35.1%;
+    top:5.3%
+  }
+  .matrix-diagram__number.-position-b4 {
+    left:38.4%;
+    top:4%
+  }
+  .matrix-diagram__number.-position-b6 {
+    left:42%;
+    top:3%
+  }
+  .health-table {
+    font-size:12px;
+    width:100%
+  }

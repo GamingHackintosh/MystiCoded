@@ -1,17 +1,5 @@
 function displayMatrixSVG(chakras) {
     const matrixResult = document.getElementById('matrixResult');
-    
-    const chakrasPositions = [
-        { x: 105, y: 105, value: chakras.a },
-        { x: 285, y: 105, value: chakras.b },
-        { x: 465, y: 105, value: chakras.l },
-        { x: 105, y: 285, value: chakras.d },
-        { x: 285, y: 285, value: chakras.e },
-        { x: 465, y: 285, value: chakras.c },
-        { x: 105, y: 465, value: chakras.b1 },
-        { x: 285, y: 465, value: chakras.b2 },
-        { x: 465, y: 465, value: chakras.b3 }
-    ];
 
     chakrasPositions.forEach((chakra, index) => {
         const chakraElement = document.createElement('div');
