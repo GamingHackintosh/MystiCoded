@@ -181,3 +181,11 @@ tbody {
     text-anchor: middle;
     -o-table-baseline: middle;
 }
+
+#matrixResult {
+    position: relative;
+    width: 570px;
+    height: 570px;
+    background: url('../img/matrix-left/schema.png') no-repeat center center;
+    background-size: cover;
+}

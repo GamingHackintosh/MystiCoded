@@ -1,45 +1,37 @@
-function generateMatrix(matrixData) {
-    const svgContainer = document.getElementById('svg-container');
-    svgContainer.innerHTML = ''; // Очистка существующего содержимого
-
-    const svgNS = "http://www.w3.org/2000/svg";
-    const svg = document.createElementNS(svgNS, "svg");
-    svg.setAttributeNS(null, "viewBox", "0 0 850 850");
-    svg.setAttributeNS(null, "width", "570px");
-    svg.setAttributeNS(null, "height", "570px");
-
-    matrixData.forEach(data => {
-        const rect = document.createElementNS(svgNS, "rect");
-        rect.setAttributeNS(null, "x", data.x);
-        rect.setAttributeNS(null, "y", data.y);
-        rect.setAttributeNS(null, "width", data.width);
-        rect.setAttributeNS(null, "height", data.height);
-        rect.setAttributeNS(null, "fill", data.color);
-
-        const text = document.createElementNS(svgNS, "text");
-        text.setAttributeNS(null, "x", data.textX);
-        text.setAttributeNS(null, "y", data.textY);
-        text.setAttributeNS(null, "fill", "black");
-        text.setAttributeNS(null, "font-size", "12");
-        text.setAttributeNS(null, "text-anchor", "middle");
-        text.textContent = data.value;
-
-        svg.appendChild(rect);
-        svg.appendChild(text);
-    });
-
-    svgContainer.appendChild(svg);
-}
-
-function getMatrixData() {
-    const matrixData = [
-        {x: 10, y: 10, width: 50, height: 50, color: '#ae309a', textX: 35, textY: 35, value: 7},
-        // Добавьте другие прямоугольники с позициями, цветами и значениями
+function displayMatrixSVG(chakras) {
+    const matrixResult = document.getElementById('matrixResult');
+    
+    const chakrasPositions = [
+        { x: 105, y: 105, value: chakras.a },
+        { x: 285, y: 105, value: chakras.b },
+        { x: 465, y: 105, value: chakras.l },
+        { x: 105, y: 285, value: chakras.d },
+        { x: 285, y: 285, value: chakras.e },
+        { x: 465, y: 285, value: chakras.c },
+        { x: 105, y: 465, value: chakras.b1 },
+        { x: 285, y: 465, value: chakras.b2 },
+        { x: 465, y: 465, value: chakras.b3 }
     ];
-    return matrixData;
+
+    chakrasPositions.forEach((chakra, index) => {
+        const chakraElement = document.createElement('div');
+        chakraElement.classList.add('chakra-number', `chakra-${index + 1}`);
+        chakraElement.style.top = `${chakra.y - 12}px`; // Корректировка по вертикали
+        chakraElement.style.left = `${chakra.x - 12}px`; // Корректировка по горизонтали
+        chakraElement.textContent = chakra.value;
+        matrixResult.appendChild(chakraElement);
+    });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const matrixData = getMatrixData();
-    generateMatrix(matrixData);
+// Пример вызова функции
+displayMatrixSVG({
+    a: 'A1',
+    b: 'B1',
+    l: 'L1',
+    d: 'D1',
+    e: 'E1',
+    c: 'C1',
+    b1: 'B2',
+    b2: 'B3',
+    b3: 'B4'
 });

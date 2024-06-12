@@ -150,23 +150,7 @@ function calculateChakras(day, month, year) {
 }
 
 
-function displayChakras(chakras) {
-    const chakraTable = document.getElementById('chakraTable');
-    chakraTable.innerHTML = '<table>' +
-        Object.entries(chakras).map(([chakra, value]) => `<tr><td>${chakra}</td><td>${value}</td></tr>`).join('') +
-        '</table>';
-}
-
-function displayMatrixSVG(chakras) {
-    const svgContent = `
-    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="100" cy="100" r="90" stroke="black" stroke-width="2" fill="none" />
-        <text x="50" y="50">${chakras.a}</text>
-        <text x="150" y="50">${chakras.b}</text>
-        <text x="50" y="150">${chakras.l}</text>
-        <text x="150" y="150">${chakras.l}</text>
-        <text x="100" y="100">${chakras.l}</text>
-    </svg>
-    `;
-    document.getElementById('matrixResult').innerHTML = svgContent;
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const calculateButton = document.querySelector('.btn');
+    calculateButton.addEventListener('click', calculateMatrix);
+});

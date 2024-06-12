@@ -95,6 +95,7 @@
     }
 }
 
+/*===== MATRIX.css =====*/
 @media (max-width: 768px) {
     .matrix {
         flex-direction: column;
@@ -108,7 +109,8 @@
         align-items: center;
     }
     .matrix-left {
-        width: 100%;
+        width: 370px;
+        height: 370px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -127,7 +129,8 @@
         width: 100%;
         border-bottom: 1px solid #ddd;
     }
-    .tbody {
+    .tabl tbody {
+        margin-top: 15px;
         padding-top: 10px;
     }
     .tabl td {
@@ -150,6 +153,14 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+
+    #matrixResult {
+        position: relative;
+        width: 360px;
+        height: 360px;
+        background: url('../img/matrix-left/schema.png') no-repeat center center;
+        background-size: cover;
     }
 }
 
