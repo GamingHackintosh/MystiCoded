@@ -95,7 +95,6 @@
     }
 }
 
-/*===== MATRIX.css =====*/
 @media (max-width: 768px) {
     .matrix {
         flex-direction: column;
@@ -123,26 +122,24 @@
         border-collapse: collapse;
         line-height: 1rem;
     }
-    .tabl {
-        tr {
-            display: table-row;
-            width: 100%;
-            border-bottom: 1px solid #ddd;
-        }
-        tbody {
-            padding-top: 10px;
-        }
-        td {
-            padding: 8px;
-            text-align: center;
-            display: table-cell;
-
-            &:first-child {
-                width: 150px; 
-            }
-        }
+    .tabl tr {
+        display: table-row;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
     }
-    .header-row, .total-row {
+    .tbody {
+        padding-top: 10px;
+    }
+    .tabl td {
+        padding: 8px;
+        text-align: center;
+        display: table-cell;
+    }
+    .tabl td:first-child {
+        width: 150px;
+    }
+    .header-row,
+    .total-row {
         display: flex;
         justify-content: space-between;
         width: 100%;

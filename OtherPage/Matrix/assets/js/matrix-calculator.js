@@ -41,13 +41,6 @@ function calculateMatrix(event) {
     const soulNumber = calculateNumber(day + month + year);
     const purposeNumber = calculateNumber(soulNumber + day);
 
-    const matrixResult = document.getElementById('matrixResult');
-    matrixResult.innerHTML = `
-        <p>Здравствуйте, ${name}!</p>
-        <p>Ваше число души: ${soulNumber}</p>
-        <p>Ваше число предназначения: ${purposeNumber}</p>
-    `;
-
     const chakras = calculateChakras(day, month, year);
 
     displayChakras(chakras);
