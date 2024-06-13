@@ -97,20 +97,23 @@
 
 /*===== MATRIX.css =====*/
 @media (max-width: 768px) {
+    .container.matrix {
+        grid-template-columns: 1fr; 
+    }
     .matrix {
         flex-direction: column;
         padding: 20px;
     }
     .matrix-right {
-        width: 90%;
+        width: 80%;
         margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .matrix-left {
-        width: 400px;
-        height: 400px;
+        width: 320px;
+        height: 320px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -118,7 +121,7 @@
     }
     .tabl {
         width: 100%;
-        display: contents;
+        display: table;
         font-size: 12px;
         border: 1px solid #ddd;
         border-collapse: collapse;
@@ -130,6 +133,7 @@
         border-bottom: 1px solid #ddd;
     }
     .tabl tbody {
+        display: contents;
         margin-top: 15px;
         padding-top: 10px;
     }
@@ -143,26 +147,40 @@
     }
     .header-row,
     .total-row {
-        display: flex;
+        display: table-row;
         justify-content: space-between;
         width: 100%;
         background: #e0e0e0;
         font-weight: bold;
     }
     .chakra-row {
-        display: flex;
+        display: table-row;
         justify-content: space-between;
         width: 100%;
     }
 
     #matrixResult {
         position: absolute;
-        width: 360px;
-        height: 360px;
+        width: 320px;
+        height: 320px;
         background: url('../img/matrix-left/schema.png') no-repeat center center;
         background-size: cover;
     }
+
+    .tooltip {
+        font-size: 10px;
+    }
 }
+
+@media (max-width: 480px) {
+    .tabl td {
+        padding: 5px;
+    }
+    .tabl td:first-child {
+        width: 25px;
+    }
+}
+
 
 /*===== FORM.css =====*/
 @media (max-width: 768px) {

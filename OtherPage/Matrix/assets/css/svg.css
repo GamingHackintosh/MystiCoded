@@ -2,9 +2,6 @@
 .svg-container {
     text-align: center;
     border-radius: 10px;
-    background: url("../img/shema.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 550px;
     height: 550px;
     transition: transform 0.3s ease;
@@ -57,7 +54,6 @@ text {color: black;}
 table {
     margin: 20px auto;
     border-collapse: collapse;
-    width: 80%;
 }
 th, td {
     border: 1px solid #ddd;
