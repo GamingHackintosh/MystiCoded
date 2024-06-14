@@ -7,14 +7,7 @@ body {
     background-attachment: fixed;
     color: #333;
 }
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 .image-container {
     position: relative;
 }
@@ -32,6 +25,109 @@ body {
 main {
     padding: 20px;
 }
+
+
+/*===== CONTAINER =====*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*=== Flex ===*/
+.flex-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}  
+.flex-container .section-title {
+     margin-right: 10px;
+}
+
+/*=== Grid ===*/
+
+
+
+
+
+/*===== TABLE =====*/
+table {
+    border: none;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}  
+.table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td {
+    padding: 15px;
+    vertical-align: top;
+}
+  
+.inner-table {
+    width: 100%;
+    border-spacing: 10px;
+}
+.inner-table td {
+    padding: 5px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+ }
+ 
+.tabl {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    line-height: 1.5rem;
+}
+
+.header-row {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+.header-row td {
+    padding: 10px;
+    background: rgba(224, 224, 224, 0.5);
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.chakra-row td {
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background: rgba(224, 224, 224, 0.5);
+}
+.chakra-number {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.total-row {
+    font-weight: bold;
+}
+.total-row td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+.total-row, .n54, .n55, .n56 {
+    background: rgba(224, 224, 224, 0.5);
+}
+
+
 
 
 /*===== BUTTONS =====*/

@@ -56,18 +56,42 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+
 .section-title {
-  font-size: 1.5rem;
+  font-size: 17px;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  color: #000;
+  font-family: 'Gilroy', sans-serif;
+  text-align: left;
 }
 .section-description {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  color: #333;
+  font-size: 13px;
+  font-family: 'Gilroy', sans-serif;
+  text-align: left;
 }
+
+.round {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icon-container img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 
 .matrix-right {
     position: relative;
@@ -125,42 +149,6 @@
 }
 
 
-.tabl {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    line-height: 1.5rem;
-}
-.table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.header-row {
-    font-size: 14px;
-    font-weight: bold;
-    color: #000000;
-}
-.header-row td {
-    padding: 10px;
-    background: rgba(224, 224, 224, 0.5);
-    text-align: center;
-    vertical-align: middle;
-}
-
-
-.chakra-row td {
-    text-align: center;
-    vertical-align: middle;
-    color: black;
-    background: rgba(224, 224, 224, 0.5);
-}
-
-.chakra-number {
-    padding: 10px;
-    border-radius: 5px;
-}
 #chakra7 .chakra-number { background: #993399; color: white;}
 #chakra6 .chakra-number { background: #3366ff; color: white;}
 #chakra5 .chakra-number { background: #33ccff; color: white;}
@@ -168,19 +156,6 @@
 #chakra3 .chakra-number { background: #ffff99; color: #000000; }
 #chakra2 .chakra-number { background: #ff9900; color: white;}
 #chakra1 .chakra-number { background: #cc3333; color: white;}
-
-.total-row {
-    font-weight: bold;
-}
-.total-row td {
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-    color: black;
-}
-.total-row, .n54, .n55, .n56 {
-    background: rgba(224, 224, 224, 0.5);
-}
 
 
 
