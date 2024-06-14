@@ -1,5 +1,6 @@
 /*===== MOBILE MENU =====*/
 .hamburger {
+    box-sizing: content-box;
     position: relative;
     width: 35px;
     height: 35px;
@@ -89,6 +90,7 @@
     border-radius: 20px;
     opacity: 1;
     user-select: auto;
+    z-index: 2;
 }
 
 .menu-button:checked ~ .icon-wrapper .hamburger-line.second {
@@ -104,10 +106,16 @@
     transform: rotate(45deg) scale(1.2);
 }
 
+
+/*===== menu-toggle.css =====*/
 @media (max-width: 768px) {
     .menu-button-wrapper {
         position: relative;
         display: block;
         padding-right: 10px;
+    }
+    .item-list {
+        display: flex;
+        flex-direction: column;
     }
 }

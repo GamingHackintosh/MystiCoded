@@ -199,7 +199,6 @@
     }
     .container.matrix {
         grid-template-columns: 1fr;
-        padding: 10px;
     }
     .matrix-left_down, .matrix-right_down {
         width: 100%;
@@ -292,18 +291,5 @@
         width: 100px;
         height: 100px;
         padding: 8px;
-    }
-}
-
-/*===== menu-toggle.css =====*/
-@media (max-width: 768px) {
-    .menu-button-wrapper {
-        position: relative;
-        display: block;
-        padding-right: 10px;
-    }
-    .item-list {
-        display: flex;
-        flex-direction: column;
     }
 }
