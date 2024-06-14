@@ -89,7 +89,6 @@
     border-radius: 20px;
     opacity: 1;
     user-select: auto;
-    z-index: 2;
 }
 
 .menu-button:checked ~ .icon-wrapper .hamburger-line.second {

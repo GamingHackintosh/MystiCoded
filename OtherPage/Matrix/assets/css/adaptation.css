@@ -105,7 +105,7 @@
         padding: 20px;
     }
     .matrix-right {
-        width: 80%;
+        width: 350px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
@@ -113,17 +113,25 @@
     }
 
     .matrix-left {
-        width: 430px;
-        height: 430px;
+        width: 350px;
+        height: 350px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+    #matrixResult {
+        width: 320px;
+        height: 320px;
+    }
+
     .matrix-left_down {
-        flex-direction: column;
-        width: 80%;
+        width: 95%;
+        margin-top: 20px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .matrix-left_down::before{
         content: "";
@@ -137,15 +145,14 @@
         z-index: -1;
     }
     .matrix-left_down table,
+    .matrix-left_down table tbody,
     .matrix-left_down .inner-table {
-        width: 110%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-
     .tabl {
-        width: 100%;
         display: table;
         font-size: 12px;
         border: 1px solid #ddd;
@@ -154,7 +161,6 @@
     }
     .tabl tr {
         display: table-row;
-        width: 100%;
         border-bottom: 1px solid #ddd;
     }
     .tabl tbody {
@@ -166,9 +172,6 @@
         padding: 8px;
         text-align: center;
         display: table-cell;
-    }
-    .tabl td:first-child {
-        width: 150px;
     }
     .header-row,
     .total-row {
@@ -184,28 +187,74 @@
         width: 100%;
     }
 
-    #matrixResult {
-        position: absolute;
-        width: 430px;
-        height: 430px;
-        background: url('../img/matrix-left/schema.png') no-repeat center center;
-        background-size: cover;
-    }
-
     .tooltip {
         font-size: 10px;
     }
 }
 
-
 @media (max-width: 480px) {
+    .matrix {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container.matrix {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .matrix-left_down, .matrix-right_down {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .matrix-left_down table,
+    .matrix-left_down table tbody,
+    .matrix-left_down .inner-table {
+        display: block;
+        width: 100%;
+    }
+    .matrix-left_down table {
+        width: 100%;
+    }
+    .matrix-left_down .inner-table {
+        display: table;
+    }
+    .matrix-left_down td .round {
+        display: inline-block;
+    }
+    .matrix-left_down .icon-container {
+        display: none;
+    }
+    .matrix-left_down .section-title {
+        font-size: 14px;
+    }
+    .matrix-left_down .section-description {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .matrix-left_down .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .matrix-left_down .flex-container .section-title {
+        font-size: 14px;
+    }
+    .matrix-left_down .flex-container .round {
+        margin-top: 5px;
+    }
     .tabl td {
         padding: 5px;
+        font-size: 10px;
     }
     .tabl td:first-child {
-        width: 25px;
+        width: auto;
+    }
+    .header-row, .total-row, .chakra-row {
+        display: block;
+        width: 100%;
     }
 }
+
 
 
 /*===== FORM.css =====*/
@@ -246,20 +295,15 @@
     }
 }
 
-
-/*===== Cookies.css =====*/
+/*===== menu-toggle.css =====*/
 @media (max-width: 768px) {
-    .cookie-container {
-        width: 90%;
-        padding: 8px;
+    .menu-button-wrapper {
+        position: relative;
+        display: block;
+        padding-right: 10px;
     }
-
-    .cookie-content {
-        font-size: 14px;
-    }
-
-    .cookie-buttons button {
-        padding: 8px 16px;
-        margin: 4px;
+    .item-list {
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,4 +1,12 @@
 /*===== Сброс стилей =====*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-size-adjust: none;
+    outline: none;
+    pointer-events: unset;
+}
 body {
     font-family: 'Gilroy', sans-serif;
     margin: 0;
