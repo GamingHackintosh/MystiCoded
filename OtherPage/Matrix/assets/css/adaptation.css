@@ -97,29 +97,21 @@
 
 /*===== MATRIX.css =====*/
 @media (max-width: 768px) {
-    .container.matrix {
-        grid-template-columns: 1fr; 
-    }
-    .matrix {
+    .matrix_up, .matrix_down {
         flex-direction: column;
-        padding: 20px;
-    }
-    .matrix-right {
-        width: 350px;
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
 
-    .matrix-left {
-        width: 350px;
-        height: 350px;
+    .matrix-left_down, .matrix-right_down, .matrix-left_up, .matrix-right_up {
+        width: 100%;
         margin-top: 20px;
+        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
     }
+    
     #matrixResult {
         width: 320px;
         height: 320px;

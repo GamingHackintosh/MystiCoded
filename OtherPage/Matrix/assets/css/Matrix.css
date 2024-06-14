@@ -1,45 +1,56 @@
 /*===== MATRIX =====*/
-.matrix {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
+.matrix-left_down, .matrix-right_down, .matrix-left_up, .matrix-right_up {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 .container.matrix {
-    background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
-    background-clip: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
 }
-.matrix-left, .matrix-right, .matrix-left_down, .matrix-right_down {
+
+.matrix-left_down, .matrix-right_down, .matrix-left_up, .matrix-right_up {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-.matrix-left {
+.matrix_up, .matrix_down {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 20px;
+  background: linear-gradient(123deg, #008559 0%, #007e94 50%, #00e59c 100%);
+  background-clip: border-box;
+}
+
+.matrix_up .matrix-left_up, .matrix_up .matrix-right_up,
+.matrix_down .matrix-left_down, .matrix_down .matrix-right_down {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.matrix-left_up {
   position: relative;
   width: 570px;
   height: 570px;
-}
-
-.matrix-left_down {
-  position: relative;
   text-align: center;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.matrix-left_down::before {
+.matrix-left_up::before {
   content: "";
   position: absolute;
   top: 0;
@@ -50,12 +61,11 @@
   opacity: 0.6;
   z-index: -1;
 }
-.matrix-left_down:hover {
+.matrix-left_up:hover {
   background-color: #f0f0f0;
   transform: translateX(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 
 .section-title {
   font-size: 17px;
@@ -93,23 +103,23 @@
 }
 
 
-.matrix-right {
+.matrix-right_up {
     position: relative;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
-.matrix-right:hover {
+.matrix-right_up:hover {
     background-color: #ffffff;
     transform: translateX(10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.matrix-right::before {
+.matrix-right_up::before {
     content: "";
     position: absolute;
     top: 0;
@@ -129,7 +139,7 @@
     display: contents;
     width: 100%;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 100%;
@@ -201,7 +211,7 @@
 
 #matrixResult {
     position: relative;
-    width: 570px;
+    width: auto;
     height: 570px;
     background: url('../img/matrix-left/schema.png') no-repeat center center;
     background-size: cover;
