@@ -149,7 +149,6 @@
         font-size: 12px;
         border: 1px solid #ddd;
         border-collapse: collapse;
-        line-height: 1rem;
     }
     .tabl tr {
         display: table-row;
