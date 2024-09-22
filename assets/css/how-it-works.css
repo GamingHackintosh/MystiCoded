@@ -1,0 +1,88 @@
+.how-it-works-section {
+    max-width: 1200px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.how-it-works_title h2 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/*=== КНОПКИ ===*/
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #00695c, #00897b, #009688);
+    border-radius: 25px;
+    padding: 5px;
+}
+.tab-buttons .tab {
+    flex: 1;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.tab-buttons .tab.active {
+    background: #fff;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+.tab-buttons .tab:not(.active):hover {
+    color: #fff;
+}
+
+.tab-content {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.tab-content h3 {
+    font-size: 28px;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.tab-content p {
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.tab-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.tab-content ul li {
+    font-size: 18px;
+    color: #00695c;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+.tab-content ul li::before {
+    content: '✔';
+    color: #009688;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
