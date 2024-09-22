@@ -1,0 +1,119 @@
+.importance-matrix {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+/*===== HEADER =====*/
+.importance-header {
+    text-align: center;
+    margin: 20px 0;
+}
+.importance-header h2 {
+    font-size: 36px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.highlight {
+    background-color: #009688;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.importance-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.importance-left, .importance-right {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+/*===== IMAGE =====*/
+.importance-image {
+    text-align: center;
+}
+.importance-image img {
+    aspect-ratio: 1/1.034;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.importance-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+/*===== TEXT =====*/
+.importance-text {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.importance-text ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.importance-text li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.importance-text li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*===== Color Text =====*/
+.importance-text_red {
+    color: #e57373;
+    border-left: 4px solid #e53935;
+}
+.importance-text_orange {
+    color: #ffb74d;
+    border-left: 4px solid #fb8c00;
+}
+.importance-text_green {
+    color: #81c784;
+    border-left: 4px solid #43a047;
+}
+.importance-text_blue {
+    color: #64b5f6;
+    border-left: 4px solid #1e88e5;
+}
+.importance-text_purple {
+    color: #ba68c8;
+    border-left: 4px solid #8e24aa;
+}
+
+.importance-button {
+    text-align: center;
+    margin-top: 20px;
+}
+.importance-button button {
+    background-color: #009688;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.importance-button button:hover {
+    background-color: #00796b;
+}

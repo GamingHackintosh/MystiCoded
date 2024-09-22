@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MystiCoded/static/css/main.f855e6bc.css",
+    "main.js": "/MystiCoded/static/js/main.0118311e.js",
+    "index.html": "/MystiCoded/index.html",
+    "main.f855e6bc.css.map": "/MystiCoded/static/css/main.f855e6bc.css.map",
+    "main.0118311e.js.map": "/MystiCoded/static/js/main.0118311e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.0118311e.js"
+  ]
+}
