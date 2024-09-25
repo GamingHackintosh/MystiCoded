@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MystiCoded/static/css/main.aa3fb4df.css",
-    "main.js": "/MystiCoded/static/js/main.a58eb3bb.js",
+    "main.css": "/MystiCoded/static/css/main.9e24f4a0.css",
+    "main.js": "/MystiCoded/static/js/main.c76ff23e.js",
     "static/media/background-2.webp": "/MystiCoded/static/media/background-2.bc921cea71599d6c62a2.webp",
     "static/media/Gilroy-Regular.ttf": "/MystiCoded/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Bold.ttf": "/MystiCoded/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
@@ -11,11 +11,11 @@
     "static/media/Gilroy-Regular.woff2": "/MystiCoded/static/media/Gilroy-Regular.5c23dc8503bf569ed5ed.woff2",
     "static/media/Gilroy-Bold.woff2": "/MystiCoded/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
     "index.html": "/MystiCoded/index.html",
-    "main.aa3fb4df.css.map": "/MystiCoded/static/css/main.aa3fb4df.css.map",
-    "main.a58eb3bb.js.map": "/MystiCoded/static/js/main.a58eb3bb.js.map"
+    "main.9e24f4a0.css.map": "/MystiCoded/static/css/main.9e24f4a0.css.map",
+    "main.c76ff23e.js.map": "/MystiCoded/static/js/main.c76ff23e.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa3fb4df.css",
-    "static/js/main.a58eb3bb.js"
+    "static/css/main.9e24f4a0.css",
+    "static/js/main.c76ff23e.js"
   ]
 }
