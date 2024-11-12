@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d9ab08c.css",
-    "main.js": "/static/js/main.53f15807.js",
-    "static/css/394.1cb544d6.chunk.css": "/static/css/394.1cb544d6.chunk.css",
-    "static/js/394.ffb88b55.chunk.js": "/static/js/394.ffb88b55.chunk.js",
-    "static/css/504.20b13013.chunk.css": "/static/css/504.20b13013.chunk.css",
-    "static/js/504.9d155d4f.chunk.js": "/static/js/504.9d155d4f.chunk.js",
-    "static/media/shema.png": "/static/media/shema.a9699354ea4087ff5260.png",
-    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
-    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
-    "static/media/Gilroy-ExtraBold.ttf": "/static/media/Gilroy-ExtraBold.92e435f7fae6070d73bb.ttf",
-    "static/media/background-1.webp": "/static/media/background-1.e33fa04349ef672cd1f8.webp",
-    "static/media/Gilroy-Light.otf": "/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
-    "static/media/Gilroy-Regular.woff2": "/static/media/Gilroy-Regular.5c23dc8503bf569ed5ed.woff2",
-    "static/media/Gilroy-Bold.woff2": "/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
-    "index.html": "/index.html",
-    "main.2d9ab08c.css.map": "/static/css/main.2d9ab08c.css.map",
-    "main.53f15807.js.map": "/static/js/main.53f15807.js.map",
-    "394.1cb544d6.chunk.css.map": "/static/css/394.1cb544d6.chunk.css.map",
-    "394.ffb88b55.chunk.js.map": "/static/js/394.ffb88b55.chunk.js.map",
-    "504.20b13013.chunk.css.map": "/static/css/504.20b13013.chunk.css.map",
-    "504.9d155d4f.chunk.js.map": "/static/js/504.9d155d4f.chunk.js.map"
+    "main.css": "/MystiCoded/static/css/main.5479be91.css",
+    "main.js": "/MystiCoded/static/js/main.f27a2fef.js",
+    "static/css/394.1cb544d6.chunk.css": "/MystiCoded/static/css/394.1cb544d6.chunk.css",
+    "static/js/394.54892c95.chunk.js": "/MystiCoded/static/js/394.54892c95.chunk.js",
+    "static/css/504.d1e90982.chunk.css": "/MystiCoded/static/css/504.d1e90982.chunk.css",
+    "static/js/504.19149735.chunk.js": "/MystiCoded/static/js/504.19149735.chunk.js",
+    "static/media/shema.png": "/MystiCoded/static/media/shema.a9699354ea4087ff5260.png",
+    "static/media/Gilroy-Regular.ttf": "/MystiCoded/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
+    "static/media/Gilroy-Bold.ttf": "/MystiCoded/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
+    "static/media/Gilroy-ExtraBold.ttf": "/MystiCoded/static/media/Gilroy-ExtraBold.92e435f7fae6070d73bb.ttf",
+    "static/media/background-1.webp": "/MystiCoded/static/media/background-1.e33fa04349ef672cd1f8.webp",
+    "static/media/Gilroy-Light.otf": "/MystiCoded/static/media/Gilroy-Light.cc7ab55d27205bd64001.otf",
+    "static/media/Gilroy-Regular.woff2": "/MystiCoded/static/media/Gilroy-Regular.5c23dc8503bf569ed5ed.woff2",
+    "static/media/Gilroy-Bold.woff2": "/MystiCoded/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
+    "index.html": "/MystiCoded/index.html",
+    "main.5479be91.css.map": "/MystiCoded/static/css/main.5479be91.css.map",
+    "main.f27a2fef.js.map": "/MystiCoded/static/js/main.f27a2fef.js.map",
+    "394.1cb544d6.chunk.css.map": "/MystiCoded/static/css/394.1cb544d6.chunk.css.map",
+    "394.54892c95.chunk.js.map": "/MystiCoded/static/js/394.54892c95.chunk.js.map",
+    "504.d1e90982.chunk.css.map": "/MystiCoded/static/css/504.d1e90982.chunk.css.map",
+    "504.19149735.chunk.js.map": "/MystiCoded/static/js/504.19149735.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d9ab08c.css",
-    "static/js/main.53f15807.js"
+    "static/css/main.5479be91.css",
+    "static/js/main.f27a2fef.js"
   ]
 }
