@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/MystiCoded/static/css/main.8a561f7f.css",
-    "main.js": "/MystiCoded/static/js/main.bc3c5b38.js",
-    "static/css/941.efe2b68b.chunk.css": "/MystiCoded/static/css/941.efe2b68b.chunk.css",
-    "static/js/941.6bb95b7b.chunk.js": "/MystiCoded/static/js/941.6bb95b7b.chunk.js",
-    "static/css/929.e9927589.chunk.css": "/MystiCoded/static/css/929.e9927589.chunk.css",
-    "static/js/929.49248f40.chunk.js": "/MystiCoded/static/js/929.49248f40.chunk.js",
+    "main.css": "/MystiCoded/static/css/main.2d05d1ba.css",
+    "main.js": "/MystiCoded/static/js/main.6760a125.js",
+    "static/css/941.f0de0103.chunk.css": "/MystiCoded/static/css/941.f0de0103.chunk.css",
+    "static/js/941.1367c58b.chunk.js": "/MystiCoded/static/js/941.1367c58b.chunk.js",
+    "static/css/929.a8ee22f2.chunk.css": "/MystiCoded/static/css/929.a8ee22f2.chunk.css",
+    "static/js/929.885e27a2.chunk.js": "/MystiCoded/static/js/929.885e27a2.chunk.js",
     "static/media/shema.png": "/MystiCoded/static/media/shema.a9699354ea4087ff5260.png",
     "static/media/Gilroy-Regular.ttf": "/MystiCoded/static/media/Gilroy-Regular.fa652e766b6a85a1f9cb.ttf",
     "static/media/Gilroy-Bold.ttf": "/MystiCoded/static/media/Gilroy-Bold.901a60fc2835c74fba67.ttf",
@@ -15,15 +15,15 @@
     "static/media/Gilroy-Regular.woff2": "/MystiCoded/static/media/Gilroy-Regular.5c23dc8503bf569ed5ed.woff2",
     "static/media/Gilroy-Bold.woff2": "/MystiCoded/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
     "index.html": "/MystiCoded/index.html",
-    "main.8a561f7f.css.map": "/MystiCoded/static/css/main.8a561f7f.css.map",
-    "main.bc3c5b38.js.map": "/MystiCoded/static/js/main.bc3c5b38.js.map",
-    "941.efe2b68b.chunk.css.map": "/MystiCoded/static/css/941.efe2b68b.chunk.css.map",
-    "941.6bb95b7b.chunk.js.map": "/MystiCoded/static/js/941.6bb95b7b.chunk.js.map",
-    "929.e9927589.chunk.css.map": "/MystiCoded/static/css/929.e9927589.chunk.css.map",
-    "929.49248f40.chunk.js.map": "/MystiCoded/static/js/929.49248f40.chunk.js.map"
+    "main.2d05d1ba.css.map": "/MystiCoded/static/css/main.2d05d1ba.css.map",
+    "main.6760a125.js.map": "/MystiCoded/static/js/main.6760a125.js.map",
+    "941.f0de0103.chunk.css.map": "/MystiCoded/static/css/941.f0de0103.chunk.css.map",
+    "941.1367c58b.chunk.js.map": "/MystiCoded/static/js/941.1367c58b.chunk.js.map",
+    "929.a8ee22f2.chunk.css.map": "/MystiCoded/static/css/929.a8ee22f2.chunk.css.map",
+    "929.885e27a2.chunk.js.map": "/MystiCoded/static/js/929.885e27a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a561f7f.css",
-    "static/js/main.bc3c5b38.js"
+    "static/css/main.2d05d1ba.css",
+    "static/js/main.6760a125.js"
   ]
 }
